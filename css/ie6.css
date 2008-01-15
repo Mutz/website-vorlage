@@ -1,0 +1,5 @@
+/* Internet Explorer bis Version 6
+------------------------------------------------------------------------- */
+
+/* Transparenz für IE6 */
+#container { behavior: url(js/iepngfix.htc) }
