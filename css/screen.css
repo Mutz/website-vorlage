@@ -5,11 +5,11 @@
 
 /* Page
 ------------------------------------------------------------------------- */
-#page { margin: 0 auto; width: 950px; }
+#page { margin: 0 auto; width:; }
 
 /* Header
 ------------------------------------------------------------------------- */
-#header { margin-top: 20px; }
+#header {  }
 
 #header .nav { border-bottom: 1px solid #DDD; }
 #header .nav li { margin-right: 2px; }
