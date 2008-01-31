@@ -2,4 +2,6 @@
 ------------------------------------------------------------------------- */
 
 /* Transparenz für IE6 */
-#container { behavior: url(js/iepngfix.htc) }
+#container {
+    behavior: url(js/iepngfix.htc)
+}
