@@ -9,30 +9,21 @@
 
 /* Header
 ------------------------------------------------------------------------- */
-/*#header { margin-top: 20px; }
+#header { margin-top: 20px; }
 
 #header .nav { border-bottom: 1px solid #DDD; }
-#header .nav li { margin-right: 1px; }
+#header .nav li { margin-right: 2px; }
 #header .nav a { padding: 5px 15px; background: #DDD; color: #666; text-decoration: none; }
-*/
 
 /* Body
 ------------------------------------------------------------------------- */
-/*#body { margin-top: 20px; }
-
-#introduction { float: left; width: 480px; margin-right: 130px; }
-
-#resources { float: left; width: 230px; }
-#resources h3 { color: #888; }
-#resources ul, #resources ol { color: #888; }
-#resources ul a { color: #555; }
-*/
+#body {  }
 
 /* Footer
 ------------------------------------------------------------------------- */
-/*#footer { border-top: 1px solid #EEE; margin-top: 20px; }
+#footer {  }
 
-#footer .nav { width: 405px; border-top: 3px solid #EEE; }
-#footer .nav a { padding: 10px 30px 10px 0; color: #666; text-decoration: none; }
+#footer .nav {  }
+#footer .nav a {  }
 
-#footer p.quiet { color: #CCC; }*/
+#footer p.quiet {  }
