@@ -8,14 +8,13 @@ legend { padding: 0 0.4em; font-weight: bold; font-size: 1.2em; }
 textarea { margin: 0.5em 0.5em 0 0; }
 textarea { padding: 0.4em; }
 
-
 /* Horizontale Formelemente
 ------------------------------------------------------------------------- */
 form.hform p { margin: 0 0 0.5em 0; }
 form.hform p label { float: left; width: 100px; }
 
-form.hform p input { width: 200px; }
-form.hform p select { width: 200px; }
+form.hform p input {  }
+form.hform p select {  }
 
 form.hform p input.button { width: auto; }
 form.hform p input.checkbox { width: auto; }
@@ -25,10 +24,16 @@ form.hform p.checkbox { margin-left: 0; }
 form.hform p.checkbox label { float: none; }
 form.hform p.checkbox input { width: auto; }
 
-
 /* Vertikale Formelemente
 ------------------------------------------------------------------------- */
 form.vform p { margin: 0 0 0.5em 0; }
 form.vform p label { display: block; }
+
+form.hform p input {  }
+form.hform p select {  }
+
+form.vform p input.button { width: auto; }
+form.vform p input.checkbox { width: auto; }
+form.vform p input.radio { width: auto; }
 
 form.vform p.checkbox label { display: inline; }

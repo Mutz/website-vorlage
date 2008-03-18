@@ -6,8 +6,8 @@
 ------------------------------------------------------------------------- */
 #header {  }
 
-#header .nav { border-bottom: 1px solid #DDD; }
-#header .nav li { margin-right: 2px; }
+#header .nav {  }
+#header .nav li {  }
 #header .nav a { padding: 5px 15px; background: #DDD; color: #666; text-decoration: none; }
 
 /* Navigation
@@ -27,8 +27,3 @@ ul.nav { display: block; }
 /* Footer
 ------------------------------------------------------------------------- */
 #footer {  }
-
-#footer .nav {  }
-#footer .nav a {  }
-
-#footer p.quiet {  }

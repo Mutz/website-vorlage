@@ -10,10 +10,5 @@ p img.top { margin-top: 0; }
 hr { background: #CCC; color: #CCC; width: 100%; height: 2px; margin: 2em 0; padding: 0; border: none; }
 blockquote { margin: 1.5em; padding: 1em; font-style: italic; font-size: 0.9em; }
 
-.small  { font-size: 0.9em; }
-.large  { font-size: 1.1em; }
-.quiet  { color: #999; }
-.hide   { display: none; }
-
 a:link, a:visited { background: transparent; font-weight: 700; text-decoration: underline; }
 a:link:after, a:visited:after { content: " (" attr(href) ") "; font-size: 90%; }

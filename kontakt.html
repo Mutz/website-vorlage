@@ -16,8 +16,11 @@
     <!--[if lte IE 7]><link href="css/ie7.css" rel="stylesheet" media="screen" type="text/css" /><![endif]-->
     <!--[if lte IE 6]><link href="css/ie6.css" rel="stylesheet" media="screen" type="text/css" /><![endif]-->
     <script type="text/javascript" src="scripts/jquery.js"></script>
-    <!--<script type="text/javascript" src="scripts/jquery.defuscate.js"></script> -->
+    <!--<script type="text/javascript" src="scripts/jquery.validate.js"></script>-->
+    <!--<script type="text/javascript" src="scripts/jquery.form.js"></script>-->
+    <!--<script type="text/javascript" src="scripts/jquery.defuscate.js"></script>-->
     <!--<script type="text/javascript" src="scripts/thickbox.js"></script>-->
+    <!--<script type="text/javascript" src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=###"></script>-->
     <!--<script type="text/javascript" src="scripts/googlemaps.js"></script>-->
     <!--<script type="text/javascript" src="scripts/domscript.js"></script>-->
 </head>
@@ -37,7 +40,17 @@
     </div>
     
     <div id="body" class="wrapper">
-        
+        <form id="kontakt_form" action="mail.php" method="post" class="vform">
+            <div id="message"></div>
+            <fieldset>
+                <p><label for="name">Name*</label><input id="name" type="text" name="name" value="Max Mustermann" /></p>
+                <p><label for="email">E-Mail*</label><input id="email" type="text" name="email" value="max@mustermann.local" /></p>
+                <p><label for="telefon">Telefon</label><input id="telefon" type="text" name="telefon" value="040-800801405" /></p>
+                <p><label for="nachricht">Nachricht*</label><textarea id="nachricht" name="nachricht" rows="8" cols="40">Hallo, wie geht's Ihnen?</textarea></p>
+                <p><input class="button" type="submit" name="button_send" value="Abschicken" /></p>
+                <p><small>* Pflichtfelder</small></p>
+            </fieldset>
+        </form>
     </div>
     
     <div id="footer">
