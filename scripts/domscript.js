@@ -6,7 +6,7 @@ $(document).ready(function() {
     $('#kontakt_form').submit(function() {
         var options = {
             target:     '#message',
-            clearForm:  true,
+            clearForm:  true
         };
         $(this).ajaxSubmit(options);
         return false;
@@ -17,28 +17,28 @@ $(document).ready(function() {
         rules: {
             name: {
                 required: true,
-                minlength: 2,
+                minlength: 2
             },
             email: {
                 required: true,
-                email: true,
+                email: true
             },
             nachricht: {
-                required: true,
-            },
+                required: true
+            }
         },
         messages: {
             name: {
                 required: "Bitte geben Sie Ihren Namen ein",
-                minlength: "Ihr Name muss mindestens 2 Zeichen haben",
+                minlength: "Ihr Name muss mindestens 2 Zeichen haben"
             },
             email: {
                 required: "Bitte geben Sie eine E-Mail-Adresse ein",
-                email: "Bitte geben Sie eine korrekte E-Mail-Adresse ein",
+                email: "Bitte geben Sie eine korrekte E-Mail-Adresse ein"
             },
             nachricht: {
-                required: "Bitte geben Sie eine Nachricht ein",
-            },
+                required: "Bitte geben Sie eine Nachricht ein"
+            }
         }
     });
 });
