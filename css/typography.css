@@ -6,8 +6,6 @@ h1, h2, h3, h4, h5, h6 { font-family:; }
 
 /* Überschriften
 ------------------------------------------------------------------------- */
-h1, h2, h3, h4, h5, h6 { font-weight:; }
-
 h1 { font-size:; line-height:; margin-bottom:; }
 h2 { font-size:; line-height:; margin-bottom:; }
 h3 { font-size:; line-height:; margin-bottom:; }
@@ -49,15 +47,3 @@ td { border-bottom:; }
 th,td { padding:; }
 tfoot { font-style:; }
 caption { background:; }
-
-/* Standard-Klassen
--------------------------------------------------------------- */
-.small { font-size:; margin-bottom:; line-height:; }
-.large { font-size:; line-height:; margin-bottom:; }
-.quiet { color:; }
-
-.hide { display: none; }
-.highlight { background:; }
-
-.top { margin-top:; padding-top:; }
-.bottom { margin-bottom:; padding-bottom:; }
