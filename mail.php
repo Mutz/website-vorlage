@@ -24,7 +24,7 @@ function validate($data) {
 
 function send_mail($data) {
     /* Generieren des E-Mail-Headers */
-    $admin = 'imhoff@12655xp.duf-metaframe.int';
+    $admin = '';
     $subject = 'Kontaktformular';
     $xtra = "From: " . $data['email'] . "\n";
     $xtra .= "Reply-To: " . $data['email'] . "\n";
