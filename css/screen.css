@@ -1,7 +1,5 @@
-/* Generelle Stile
+/* Reset
 ------------------------------------------------------------------------- */
-
-/* Reset */
 
 /* Based on http://meyerweb.com/eric/tools/css/reset/ */
 /* v1.0 | 20080212 */
@@ -43,10 +41,10 @@ table {
 
 a { outline: none; }    
 
-/* Grundlagen */
+/* Generelle Stile
+------------------------------------------------------------------------- */
 
-body {
-}
+/* Grundlagen */
 
 body {
     max-width:;
@@ -148,106 +146,239 @@ ul ul, ol ol, ol ul, ul ol {
  
 /* Listen */
 
-ul { list-style-type: circle; }
-ol { list-style-type: decimal; }
-    
+ul {
+    list-style-type: circle;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+dl {
+    margin:;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-left:;
+}
+
 /* Tabellen */
+
+table { margin-bottom:; }
+
+caption {
+    font-weight: bold;
+    font-size:;
+    padding-bottom:;
+}
+
+thead th {
+    border-top:;
+    border-bottom:;
+    padding-top:;
+    padding-bottom:;
+}
+
+tbody {
+    border-top:;
+}
+
+tbody tr th, tbody tr td {
+    border-top:;
+}
+
+th {
+    border-bottom:;
+    font-weight: bold;
+}
+
+th, td {
+    text-align: left;
+    padding:;
+}
+
+tfoot {
+    font-style:;
+}
 
 /* Zitate */
 
+blockquote {
+    font-style: italic;
+    margin-left:;
+    margin-right:;
+}
+
+blockquote cite, blockquote em {
+    font-style: normal;
+}
+
 /* Formulare */
+
+form {}
+
+fieldset {
+    border:;
+    padding:;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form .help {
+    display: block;
+    color: #777;
+    font-style: normal;
+    font-size:;
+}
+
+input, textarea, select, button {
+    font-family: inherit;
+    font-size: 1.0em;
+}
+
+button {
+    background-color:;
+    color:;
+    font-weight: bold;
+    border-color:;
+    border-width:;
+}
+
+textarea, input[type='text'], 
+input[type='password'], select {
+    border-width:;
+    border-style:;
+    border-top-color:;
+    border-left-color:;
+    border-bottom-color:;
+    border-right-color:;
+    padding:;
+}
+
+textarea:focus, input[type='text']:focus, 
+input[type='password']:focus, select:focus {
+    border-color:;
+}
+
+input.short {
+    width:;
+}
+
+input.medium, textarea.medium {
+    width:;
+}
+
+input.long, textarea.long {
+    width:;
+}
+
+textarea {
+    width: 99%;
+    display: block;
+}
+
+button.link {
+    border: 0;
+    padding: 0;
+    background-color:;
+    font-weight:;
+    cursor: pointer;
+    width: auto;
+    overflow: visible;
+}
 
 /* Sonstiges */
 
-/* Helfer Stile
-------------------------------------------------------------------------- */
+abbr, acronym {
+    border-bottom:;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em, dfn {
+    font-style: italic;
+}
+
+dfn {
+    font-weight: bold;
+}
+
+address {
+    font-style: normal;
+}
+
+pre, code, kbd, tt, samp {
+    font-family: monospace;
+}
+
+pre {
+    border-top:;
+    border-bottom:;
+    color:;
+    background-color:;
+    padding:;
+}
+
+ins {
+    text-decoration: underline;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+.small-caps {
+    text-transform: lowercase;
+    font-variant: small-caps;
+}
 
 /* Hinweise & Fehler */
+
+.error {
+    color: red;
+}
+
+.notice {
+    color: green;
+    background-color:;
+    padding:;
+}
 
 /* Seitenstruktur
 ------------------------------------------------------------------------- */
 
-/* Header */
-
-/* Navigation */
-
-/* Content */
-
-/* Footer */
-
-
-
-
-/* Overrides
-------------------------------------------------------------------------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Page
-------------------------------------------------------------------------- */
-/*#page {
+#page {
     margin: 0 auto;
     width:;
 }
-*/
-/* Header
-------------------------------------------------------------------------- */
-/*#header {}
 
-#header .nav {}
-#header .nav li {}
-#header .nav a {}
-*/
-/* Body
-------------------------------------------------------------------------- */
-/*#body {}
-*/
-/* Footer
-------------------------------------------------------------------------- */
-/*#footer {}  */
+/* Header */
 
+#header {}
 
+/* Navigation */
 
-/* Textelemente
-------------------------------------------------------------------------- */
-/*p { margin:; }
+.nav {}
+.nav li {}
+.nav a {}
 
-ul, ol { margin:; }
+/* Content */
 
-dl { margin:; }
-dl dt { font-weight: bold; }
-dl dd { margin-left:; }
+#body {}
 
-abbr, acronym { border-bottom:; }
-address { margin-top:; font-style:; }
-del { color:; }
+/* Footer */
 
-
-blockquote { margin:; }
-strong { font-weight: bold; }
-em, dfn { font-style: italic; }
-dfn { font-weight: bold; }
-pre, code { margin:; white-space: pre; }
-pre, code, tt { font:; line-height:; } 
-*/
-/* Tabellen
--------------------------------------------------------------- */
-/*table { margin-bottom:; }
-th { border-bottom:; font-weight:; }
-td { border-bottom:; }
-th,td { padding:; }
-tfoot { font-style:; }
-caption { background:; }*/
+#footer {}
