@@ -39,7 +39,7 @@ table {
     border-spacing: 0;
 }
 
-a { outline: none; }    
+a { outline: none; }
 
 /* Generelle Stile
 ------------------------------------------------------------------------- */
@@ -49,13 +49,12 @@ a { outline: none; }
 body {
     max-width:;
     min-width:;
-    background: url(img/_line-height.png) repeat 0 0;
+    background:;
+        /*background: url(img/_line-height.png) repeat 0 0;*/
     color:;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 87.5%;
     line-height: 1.5;
-    margin: 0 auto;
-    padding: 1.5em;
 }      
 
 /* Links */
