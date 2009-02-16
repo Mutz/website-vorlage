@@ -52,20 +52,6 @@
             $name = get_magic_quotes_gpc () ? stripslashes ($_POST['txt_name']) : $_POST['txt_name'];
             $telefon = get_magic_quotes_gpc () ? stripslashes ($_POST['txt_telefon']) : $_POST['txt_telefon'];
                                     
-            /* Aktuelle Zeit bestimmen */
-            $wochentag = Date("w");
-            $tag = Date("d");
-            $monat = Date("n");
-            $jahr= Date("Y");
-            $stunde = Date("H");
-            $minute = Date("i");
-            $sekunde = Date("s");
-            $zeitzone = Date("T");
-
-            /* Erzeugung der deutschen Wochen- und Monatsnamen */
-            $wochentag = erzeuge_wochentag($wochentag);
-            $monat = erzeuge_monatsnamen($monat);
-
             /* Validierung der Eingabefelder */
             $error = "";
             $validate = true;
@@ -108,7 +94,6 @@
                 $message.="<meta http-equiv='content-type' content='text/html;charset=utf-8'>";
                 $message.="</head>";
                 $message.="<body>";
-                $message.="<p>Der folgende Text wurde am <strong> " . $wochentag . ", " . $tag . ". " . $monat . " " . $jahr . " um " . $stunde . ":" . $minute . ":" . $sekunde . " Uhr </strong> von <strong>" . $name . "</strong> übermittelt:</p>";
                 $message.="<p><strong>Name: </strong></p><p>" . $name . "</p>";
                 $message.="<p><strong>E-Mail: </strong></p><p><a href='mailto:" . $email . "'>" . $email . "</a></p>";
                 $message.="<p><strong>Telefon: </strong></p><p>" . $telefon . "</p>";
@@ -116,13 +101,10 @@
                 $message.="</body></html>";
 
                 /* Versenden der Mail */
-                mail($admin, $subject, $message, $xtra);
+                // mail($admin, $subject, $message, $xtra);
                 
-                /* Ausgabe in die Seite zum testen
-                 *
-                 * echo("Admin: " . $admin . ", Subject: " . $subject . ", Message: " . $message);
-                 *
-                 */
+                /* Ausgabe in die Seite zum testen */
+                echo("Admin: " . $admin . ", Subject: " . $subject . ", Message: " . $message);
 
                 /* Leeren der Eingabefelder */
                 $name = "";
