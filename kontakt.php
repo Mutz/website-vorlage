@@ -12,12 +12,11 @@
     <meta name="keywords" content="###,###,###" />
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/screen.css" />
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/thickbox.css" /> -->
     <link rel="stylesheet" type="text/css" media="print" href="css/print.css" />
     <!--[if lte IE 7]><link href="css/ie7.css" rel="stylesheet" media="screen" type="text/css" /><![endif]-->
     <!--[if lte IE 6]><link href="css/ie6.css" rel="stylesheet" media="screen" type="text/css" /><![endif]-->
     <script type="text/javascript" src="js/jquery.js"></script>
-    <!--<script type="text/javascript" src="js/jquery.validate.js"></script>-->
-    <!--<script type="text/javascript" src="js/jquery.form.js"></script>-->
     <!--<script type="text/javascript" src="js/jquery.defuscate.js"></script>-->
     <!--<script type="text/javascript" src="js/thickbox.js"></script>-->
     <!--<script type="text/javascript" src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=###"></script>-->
