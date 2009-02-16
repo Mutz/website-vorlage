@@ -55,7 +55,6 @@ body {
     font-size: 87.5%;
     line-height: 1.5;
     margin: 0 auto;
-    padding: 1.5em;
 }      
 
 /* Links */
@@ -371,9 +370,9 @@ del {
 
 /* Navigation */
 
-.nav {}
-.nav li {}
-.nav a {}
+#nav {}
+#nav li {}
+#nav a {}
 
 /* Content */
 
