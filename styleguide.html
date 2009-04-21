@@ -51,7 +51,7 @@
         <p><a href="http://some-site.com/">Link</a>, <em>betont</em>, <strong>stark</strong>, <abbr title="North Atlantic Treaty Organization">NATO</abbr>, <dfn title="Eine Internetseite">Website</dfn>.</p>
         <address>Musterstraße 123, 12345 Musterstadt</address>
         <h3>Tabellen</h3>
-        <table summary="Summary der Tabelle" cellspacing="0">
+        <table>
                <caption>Überschrift der Tabelle</caption>
                <colgroup>
                    <col id="idCol" />
@@ -180,14 +180,14 @@
                 <p>
                     <label for="optionen">Optionen</label> 
                     <select id="optionen">
-                        <option>Option 1</option>
-                        <option>Option 2</option>
-                        <option>Option 3</option>
-                        <optgroup>
-                            <option>Option 3a</option>
-                            <option>Option 3b</option>
+                        <optgroup label="Swedish Cars">
+                            <option value ="volvo">Volvo</option>
+                            <option value ="saab">Saab</option>
                         </optgroup>
-                        <option>Option 4</option>
+                        <optgroup label="German Cars">
+                            <option value ="mercedes">Mercedes</option>
+                            <option value ="audi">Audi</option>
+                        </optgroup>
                     </select>
                 </p>
                 <ul>
