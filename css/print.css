@@ -51,7 +51,24 @@ a:link, a:visited {
     text-decoration: underline;
 }
 
-a:link:after, a:visited:after {
-    content: " (" attr(href) ") ";
-    font-size: 90%;
+#nav {
+    display: none;
+}
+
+#map {
+    width: 15.0cm;
+    height: 10.0cm;
+    border: 1px solid #000;
+}
+
+#header, #footer {
+    clear: both;
+    background: #ddd;
+    text-align: center;
+    padding: 0.3cm;
+}
+
+#header a, #footer a {
+    text-decoration: none;
+    color: #000;
 }

@@ -39,7 +39,10 @@
     </div>
     
     <div id="body" class="wrapper">
-
+        
+        <h2>Anfahrtskizze</h2>
+        <div id="map"></div>
+        
         <h2 id="kontaktformular">Kontaktformular</h2>
         
         <?php
