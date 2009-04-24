@@ -18,10 +18,10 @@
     <!--[if lte IE 6]><link href="css/ie6.css" rel="stylesheet" media="screen" type="text/css" /><![endif]-->
     <script type="text/javascript" src="js/jquery.js"></script>
     <!--<script type="text/javascript" src="js/jquery.defuscate.js"></script>-->
-    <!--<script type="text/javascript" src="js/thickbox.js"></script>-->
     <!--<script type="text/javascript" src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=###"></script>-->
     <!--<script type="text/javascript" src="js/googlemaps.js"></script>-->
     <!--<script type="text/javascript" src="js/domscript.js"></script>-->
+    <!--<script type="text/javascript" src="js/thickbox.js"></script>-->
 </head>
 
 <body>
