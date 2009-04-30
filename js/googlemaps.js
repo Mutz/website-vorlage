@@ -7,10 +7,30 @@ $(document).ready(function() {
             // Mittelpunkt der Karte
             var map = new GMap2(m);
             
-            // Bedienelemente für Zoom und Pan anzeigen (auswählen!)
-            // map.addControl(new GLargeMapControl());
-            // map.addControl(new GSmallMapControl());
-            // map.addControl(new GMapTypeControl());
+            // Bedienelemente für Zoom und Pan anzeigen
+            map.setMapType(G_NORMAL_MAP); /* 2D-Karte */
+            // map.setMapType(G_HYBRID_MAP); /* Satelllitenbild & Straßen */
+            // map.setMapType(G_SATELLITE_MAP); /* Satellitenaufnahme */
+            // map.setMapType(G_PHYSICAL_MAP); /* Gelände */
+            map.setUIToDefault(); /* Standard-Navigation */
+            // map.addControl(new GLargeMapControl()); /* Große Navigation (alt) */
+            // map.addControl(new GSmallMapControl()); /* Kleine Navigation (alt) */
+            // map.addControl(new GMapTypeControl()); /* Karte, Satellite, Hybrid (alt) */
+            map.enableScrollWheelZoom();
+            map.enableContinuousZoom(); 
+
+            // Icon
+            var MyIcon = new GIcon(G_DEFAULT_ICON);
+            MyIcon.image = "img/pin.png";
+            //MyIcon.shadow = "../img/pin_shadow.png";
+            //MyIcon.shadowSize=new GSize(19,19);
+            MyIcon.iconSize = new GSize(20, 34);
+            MyIcon.iconWindowAnchor = new GPoint(10, 10);
+
+            // GMarkerOptions Objekt
+            markerOptions = { icon:MyIcon };
+            var inactiveMirror = new GIcon(G_DEFAULT_ICON);
+            var activeMirror = new GIcon(G_DEFAULT_ICON);
 
             // Position des Geschäfts (Länge, Breite)
             var point = new GLatLng(53.555045414405996,9.995241165161133);
@@ -27,8 +47,7 @@ $(document).ready(function() {
             map.setCenter(point, zoomLevel);
             
             // Markierung hineinpieksen
-            var marker = new GMarker(point);
-            map.addOverlay(marker);
+            map.addOverlay(marker = new GMarker(point,MyIcon)); 
 
             // Infofenster anhängen (HTML)
             GEvent.addListener(marker, 'click', function() {
