@@ -21,8 +21,8 @@ $(document).ready(function() {
 
             // Icon
             var MyIcon = new GIcon(G_DEFAULT_ICON);
-            MyIcon.image = "img/pin.png";
-            //MyIcon.shadow = "../img/pin_shadow.png";
+            MyIcon.image = "css/img/pin.png";
+            //MyIcon.shadow = "css/img/pin_shadow.png";
             //MyIcon.shadowSize=new GSize(19,19);
             MyIcon.iconSize = new GSize(20, 34);
             MyIcon.iconWindowAnchor = new GPoint(10, 10);
