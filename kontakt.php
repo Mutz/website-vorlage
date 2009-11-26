@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" media="print" href="css/print.css" />
     <!--[if lte IE 7]><link href="css/ie7.css" rel="stylesheet" media="screen" type="text/css" /><![endif]-->
     <!--[if lte IE 6]><link href="css/ie6.css" rel="stylesheet" media="screen" type="text/css" /><![endif]-->
-    <script type="text/javascript" src="js/jquery.js"></script>
+    <!--<script type="text/javascript" src="js/jquery.js"></script>-->
     <!--<script type="text/javascript" src="js/jquery.defuscate.js"></script>-->
     <!--<script type="text/javascript" src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=###"></script>-->
     <!--<script type="text/javascript" src="js/googlemaps.js"></script>-->
@@ -29,7 +29,6 @@
     <div id="header">
         <h1>Name</h1>
         <ul id="nav">
-            <li><a href="#">Item</a></li>
             <li><a href="#">Item</a></li>
             <li><a href="#">Item</a></li>
             <li><a href="#">Item</a></li>
