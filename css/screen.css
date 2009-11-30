@@ -1,322 +1,133 @@
-/* Reset
-------------------------------------------------------------------------- */
-/* Based on http://meyerweb.com/eric/tools/css/reset/ */
-/* v1.0 | 20080212 */
+@import url(reset.css); /* Reset CSS */
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, 
-blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, 
-font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, 
-u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, 
-caption, tbody, tfoot, thead, tr, th, td { 
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-}
- 
-ol, ul { list-style: none; }
+/* BODY ------------------------------------------------------------------ */
 
-blockquote, q { quotes: none; }
-
-blockquote:before, blockquote:after, 
-q:before, q:after {
-    content: ''; 
-    content: none;
-}
- 
-:focus { outline: 0; }
-
-ins { text-decoration: none; }
-
-del { text-decoration: line-through; }
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-a { outline: none; }
-
-/* Basics
-------------------------------------------------------------------------- */
-body {
+html {
     background: #fff repeat 0 0;
-    color: #000;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 87.5%; /* 14px */
-    line-height: 1.5; /* 21px */
-    margin: 0 auto;
 }
 
-p, ul, ol, dl, address, table, blockquote, pre, fieldset {
-    margin-bottom: 1.5em; /* 21px */
-}
-
-/* Links
-------------------------------------------------------------------------- */
-a:link {
-    color:;
-    text-decoration:;
-}
-
-a:visited {
-    color:;
-    text-decoration:;
-}
-
-a:hover {
-    color:;
-    text-decoration:;
-}
-
-a:focus {
-    color:;
-    text-decoration:;
-}
-
-a:active {
-    color:;
-    text-decoration:;
-}
-
-/* Headlines
-------------------------------------------------------------------------- */
-/* (Skala: 6, 7, 8, 9, 10, 11, 12, 14, 16, 18, 21, 24, 36, 48, 60, 72) */
-h1 {
-    font-size: 1.7143em; /* 24px */ 
-    line-height: 0.875;
-    margin-bottom: 0.875em;
-}
-
-h2 {
-    font-size: 1.5em; /* 21px */
-    line-height: 1.0;
-    margin-bottom: 1.0em;
-}
-
-h3 {
-    font-size: 1.2857em;  /* 18px */
-    line-height: 1.1667;
-    margin-bottom: 1.1667em;
-}
-
-h4 {
-    font-size: 1.1429em; /* 16px */
-    line-height: 1.3125;
-    margin-bottom: 1.3125em;
-}
-
-h5, h6 {
-    font-size: 1.0em; /* 14px */
+body {
+    color: #222;
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-size: 87.5%;
     line-height: 1.5;
-    margin-bottom: 1.5em;
 }
 
-/* Lists
-------------------------------------------------------------------------- */
-ul { list-style-type: circle; }
-ol { list-style-type: decimal; }
-
-ul ul, ol ol, ol ul, ul ol {
-    margin-bottom: 0;
-    margin-left: 1.5em;
+@font-face {
+    font-family: '';
+    src: url('fonts/.eot');
+    src: local(''), local(''),
+        url('fonts/.woff') format('woff'),
+        url('fonts/.ttf') format('truetype'),
+        url('fonts/.svg#') format('svg');
 }
 
-dl { margin:; }
-dt { font-weight: bold; }
+/* HEADINGS ------------------------------------------------------------- */
 
-dd { margin-left:; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; color: #111; }
 
-/* Semantics
-------------------------------------------------------------------------- */
-abbr { border-bottom:; }
+h1 { font-size: 3em; line-height: 1; margin-bottom: 0.5em; }
+h2 { font-size: 2em; margin-bottom: 0.75em; }
+h3 { font-size: 1.5em; line-height: 1; margin-bottom: 1em; }
+h4 { font-size: 1.2em; line-height: 1.25; margin-bottom: 1.25em; }
+h5 { font-size: 1em; font-weight: bold; margin-bottom: 1.5em; }
+h6 { font-size: 1em; font-weight: bold; }
+
+/* TYPOGRAPHY ----------------------------------------------------------- */
+
+p { margin: 0 0 1.5em; }
+
+blockquote { margin:1.5em; color:#666; font-style: italic; }
+q { font-style: italic; }
 
 strong { font-weight: bold; }
-
 em, dfn { font-style: italic; }
+dfn { font-weight: bold; }
+sup, sub { line-height: 0; }
+abbr { border-bottom: 1px dotted #666; cursor: help; }
+address { margin: 0 0 1.5em; font-style: italic; }
 
-dfn { 
-    font-weight: bold;
-    cursor: help;
-    border-bottom: 1px dotted #999;
-}
+pre { margin: 1.5em 0; white-space: pre; }
+pre, code { font: 1em 'Andale Mono', 'Lucida Console', monospace; line-height: 1.5; }
 
-address { font-style: normal; }
-
-pre, code, kbd, tt, samp { font-family: monospace; }
-
-pre {
-    border-top:;
-    border-bottom:;
-    color:;
-    background-color:;
-    padding:;
-}
+li ul, li ol { margin: 0; }
+ul, ol { margin: 0 1.5em 1.5em 0; padding-left: 3.333em; }
+ul { list-style-type: disc; }
+ol { list-style-type: decimal; }
+dl { margin: 0 0 1.5em 0; }
+dl dt { font-weight: bold; }
+dd { margin-left: 1.5em; }
 
 ins { text-decoration: underline; }
-del { text-decoration: line-through; }
+del { color: #666; text-decoration: line-through; }
 
-/* Quotes
-------------------------------------------------------------------------- */
-blockquote {
-    font-style: italic;
-    margin-left:;
-    margin-right:;
-}
+/* LINKS ---------------------------------------------------------------- */
 
-blockquote cite, blockquote em { font-style: normal; }
+a:link { color: #000; text-decoration: underline; }
+a:visited { color: #000; text-decoration: underline; }
+a:hover { color: #009; }
+a:focus { color: #009; }
+a:active { color: #009; }
 
-q {
-    font-style: italic;
-}
+/* IMAGES & VIDEOS ------------------------------------------------------ */
 
-/* Tables
-------------------------------------------------------------------------- */
-table { margin-bottom:; }
+img.left { float: left; margin:1.5em 1.5em 1.5em 0; }
+img.right { float: right; margin:1.5em 0 1.5em 1.5em; }
 
-caption {
-    font-weight: bold;
-    font-size:;
-    padding-bottom:;
-}
+/* FORMS ---------------------------------------------------------------- */
 
-thead th {
-    border-top:;
-    border-bottom:;
-    padding-top:;
-    padding-bottom:;
-}
+label { font-weight: bold; }
+fieldset { padding: 1.5em; margin: 0 0 1.5em 0; border: 1px solid #ccc; }
+legend { font-weight: bold; font-size: 1.2em; }
+input[type=text], input[type=password], input.text, textarea, select { background-color: #fff; border: 1px solid #bbb; }
+input[type=text]:focus, input[type=password]:focus, input.text, textarea:focus, select:focus { border-color: #666; }
+input[type=text], input[type=password], textarea, select { margin: 0.5em 0; }
+input.text { width: 300px; padding: 5px; }
+textarea { width: 390px; height: 250px; padding: 5px; }
+input[type=checkbox], input[type=radio], input.checkbox, input.radio { position: relative; top: .25em; }
+.error, .notice, .success { padding: .8em; margin-bottom: 1em; border: 2px solid #ddd; }
+.error { background: #FBE3E4; color: #8a1f11; border-color: #FBC2C4; }
+.notice { background: #FFF6BF; color:#514721; border-color: #FFD324; }
+.success { background: #E6EFC2; color: #264409; border-color: #C6D880; }
+.error a { color: #8a1f11; }
+.notice a { color: #514721; }
+.success a { color: #264409; }
 
-tbody { border-top:; }
+/* TABLES --------------------------------------------------------------- */
 
-tbody tr th, tbody tr td { border-top:; }
+table { margin-bottom: 1.5em; width: 100%; }
+th { font-weight: bold; }
+thead th { background: #c3d9ff; }
+th, td, caption { padding: 4px 10px 4px 5px; }
+tr.even td { background: #e5ecf9; }
+tfoot { font-style: italic; }
+caption { background: #eee; font-weight: bold; }
 
-th {
-    border-bottom:;
-    font-weight: bold;
-}
+/* CLASSES -------------------------------------------------------------- */
 
-th, td {
-    text-align: left;
-    padding:;
-}
+.hide { display: none; }
+.quiet { color: #666; }
+.highlight { background: #ff0; }
+.first { margin-left: 0; padding-left: 0; }
+.last { margin-right: 0; padding-right: 0; }
+.top { margin-top: 0; padding-top: 0; }
+.bottom { margin-bottom: 0; padding-bottom: 0; }
 
-tfoot { font-style:; }
+/* LAYOUT --------------------------------------------------------------- */
 
-/* Forms
-------------------------------------------------------------------------- */
-form {}
+#page { margin: 0 auto; }
 
-fieldset {
-    border:;
-    padding:;
-}
-
-legend { font-weight: bold; }
-
-label {
-    font-weight: bold;
-    cursor: pointer;
-}
-
-form .help {
-    display: block;
-    color: #777;
-    font-style: normal;
-    font-size:;
-}
-
-input, textarea, select, button {
-    font-family: inherit;
-    font-size: 1.0em;
-}
-
-button {
-    background-color:;
-    color:;
-    font-weight: bold;
-    border-color:;
-    border-width:;
-}
-
-textarea, input[type='text'], 
-input[type='password'], select {
-    border-width:;
-    border-style:;
-    border-top-color:;
-    border-left-color:;
-    border-bottom-color:;
-    border-right-color:;
-    padding:;
-}
-
-textarea:focus, input[type='text']:focus, 
-input[type='password']:focus, select:focus {
-    border-color:;
-}
-
-input.short {
-    width:;
-}
-
-input.medium, textarea.medium {
-    width:;
-}
-
-input.long, textarea.long {
-    width:;
-}
-
-textarea {
-    width: 99%;
-    display: block;
-}
-
-button.link {
-    border: 0;
-    padding: 0;
-    background-color:;
-    font-weight:;
-    cursor: pointer;
-    width: auto;
-    overflow: visible;
-}
-
-/* Misc Classes
-------------------------------------------------------------------------- */
-.error { color: red; }
-
-.notice {
-    color: green;
-    background-color:;
-    padding:;
-}
-
-/* Structure
-------------------------------------------------------------------------- */
-#page {
-    margin: 0 auto;
-    width:;
-}
-
-/* Header */
 #header {}
+#footer {}
 
-/* Navigation */
+#body {}
+
+#map { width: 500px; height: 400px; }
+
+/* ###################### ----------------------------------------------- */
+
+/* NAVIGATION ----------------------------------------------------------- */
+
 #nav {}
 #nav li {}
 #nav a {}
-
-/* Content */
-#body {}
-
-#map {
-    width: 500px;
-    height: 400px;
-}
-
-/* Footer */
-#footer {}
