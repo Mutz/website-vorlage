@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="de" id="domain-suffix">
+<html lang="de" dir="ltr">
 
 <head>
     <meta charset="utf-8" />
@@ -10,20 +10,20 @@
     <meta name="description" content="###" />
     <meta name="keywords" content="###,###,###" />
     <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/screen.css" />
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/thickbox.css" /> -->
-    <link rel="stylesheet" type="text/css" media="print" href="css/print.css" />
-    <!--[if lte IE 7]><link href="css/ie7.css" rel="stylesheet" media="screen" type="text/css" /><![endif]-->
-    <!--[if lte IE 6]><link href="css/ie6.css" rel="stylesheet" media="screen" type="text/css" /><![endif]-->
-    <!--<script type="text/javascript" src="js/jquery.js"></script>-->
-    <!--<script type="text/javascript" src="js/jquery.defuscate.js"></script>-->
-    <!--<script type="text/javascript" src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=###"></script>-->
-    <!--<script type="text/javascript" src="js/googlemaps.js"></script>-->
-    <!--<script type="text/javascript" src="js/domscript.js"></script>-->
-    <!--<script type="text/javascript" src="js/thickbox.js"></script>-->
+    <link rel="stylesheet" media="screen" href="css/screen.css" />
+    <!-- <link rel="stylesheet" media="screen" href="css/thickbox.css" /> -->
+    <link rel="stylesheet" media="print" href="css/print.css" />
+    <!--[if lte IE 7]><link rel="stylesheet" media="screen" href="css/ie7.css" /><![endif]-->
+    <!--[if lte IE 6]><link rel="stylesheet" media="screen" href="css/ie6.css" /><![endif]-->
+    <!--<script src="js/jquery.js"></script>-->
+    <!--<script src="js/jquery.defuscate.js"></script>-->
+    <!--<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=###"></script>-->
+    <!--<script src="js/googlemaps.js"></script>-->
+    <!--<script src="js/domscript.js"></script>-->
+    <!--<script src="js/thickbox.js"></script>-->
 </head>
 
-<body>
+<body id="domain-suffix">
 
 <div id="page">
     <div id="header">
