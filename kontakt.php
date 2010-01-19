@@ -13,7 +13,7 @@
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" media="screen" href="css/screen.css" />
     <!--<link rel="stylesheet" media="screen" href="css/lightbox.css" />-->
-    <link rel="stylesheet" media="print" href="css/print.css" />
+    <!--><link rel="stylesheet" media="print" href="css/print.css" />-->
     <!--[if lte IE 7]><link rel="stylesheet" media="screen" href="css/ie7.css" /><![endif]-->
     <!--[if lte IE 6]><link rel="stylesheet" media="screen" href="css/ie6.css" /><![endif]-->
     <!--<script src="js/jquery.js"></script>-->
@@ -21,7 +21,7 @@
     <!--<script src="js/jquery.defuscate.js"></script>-->
     <!--<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=###"></script>-->
     <!--<script src="js/googlemaps.js"></script>-->
-    <!--<script src="js/onload.js"></script>-->
+    <!-- <script src="js/onload.js"></script>-->
 </head>
 
 <body>
