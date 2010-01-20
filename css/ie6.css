@@ -1,6 +1,6 @@
 /* INTERNET EXPLORER 6 -------------------------------------------------- */
 
 /* Transparency for IE6 */
-#container {
+img {
     behavior: url(js/iepngfix.htc)
 }

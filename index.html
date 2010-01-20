@@ -21,7 +21,7 @@
     <!--<script src="js/jquery.defuscate.js"></script>-->
     <!--<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=###"></script>-->
     <!--<script src="js/googlemaps.js"></script>-->
-    <!-- <script src="js/onload.js"></script>-->
+    <!--<script src="js/onload.js"></script>-->
 </head>
 
 <body>

@@ -2,9 +2,7 @@
 
 /* BODY ------------------------------------------------------------------ */
 
-html {
-    background: #fff repeat 0 0;
-}
+html { background: #fff repeat 0 0; }
 
 body {
     color: #222;
@@ -24,20 +22,20 @@ body {
 
 /* HEADINGS ------------------------------------------------------------- */
 
-h1, h2, h3, h4, h5, h6 { font-weight: normal; color: #111; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; color:; }
 
-h1 { font-size: 3em; line-height: 1; margin-bottom: 0.5em; }
-h2 { font-size: 2em; margin-bottom: 0.75em; }
-h3 { font-size: 1.5em; line-height: 1; margin-bottom: 1em; }
-h4 { font-size: 1.2em; line-height: 1.25; margin-bottom: 1.25em; }
-h5 { font-size: 1em; font-weight: bold; margin-bottom: 1.5em; }
-h6 { font-size: 1em; font-weight: bold; }
+h1 { font-size:; margin-bottom:; }
+h2 { font-size:; margin-bottom:; }
+h3 { font-size:; margin-bottom:; }
+h4 { font-size:; margin-bottom:; }
+h5 { font-size:; margin-bottom:; }
+h6 { font-size:; margin-bottom:; }
 
 /* TYPOGRAPHY ----------------------------------------------------------- */
 
-p { margin: 0 0 1.5em; }
+p { margin:; }
 
-blockquote { margin:1.5em; color:#666; font-style: italic; }
+blockquote { margin:; color:; font-style: italic; }
 q { font-style: italic; }
 
 strong { font-weight: bold; }
@@ -45,29 +43,29 @@ em, dfn { font-style: italic; }
 dfn { font-weight: bold; }
 sup, sub { line-height: 0; }
 abbr { border-bottom: 1px dotted #666; cursor: help; }
-address { margin: 0 0 1.5em; font-style: italic; }
+address { }
 
 pre { margin: 1.5em 0; white-space: pre; }
-pre, code { font: 1em 'Andale Mono', 'Lucida Console', monospace; line-height: 1.5; }
+pre, code { font: 1.0em 'Andale Mono', 'Lucida Console', monospace; line-height: 1.5; }
 
 li ul, li ol { margin: 0; }
-ul, ol { margin: 0 1.5em 1.5em 0; padding-left: 3.333em; }
+ul, ol { margin:; padding-left:; }
 ul { list-style-type: disc; }
 ol { list-style-type: decimal; }
-dl { margin: 0 0 1.5em 0; }
+dl { margin:; }
 dl dt { font-weight: bold; }
-dd { margin-left: 1.5em; }
+dd { margin-left:; }
 
 ins { text-decoration: underline; }
-del { color: #666; text-decoration: line-through; }
+del { color:; text-decoration: line-through; }
 
 /* LINKS ---------------------------------------------------------------- */
 
-a:link { color: #000; text-decoration: underline; }
-a:visited { color: #000; text-decoration: underline; }
-a:hover { color: #009; }
-a:focus { color: #009; }
-a:active { color: #009; }
+a:link { color:; text-decoration: underline; }
+a:visited { color:; text-decoration: underline; }
+a:hover { color:; }
+a:focus { color:; }
+a:active { color:; }
 
 /* IMAGES & VIDEOS ------------------------------------------------------ */
 
@@ -95,13 +93,13 @@ input[type=checkbox], input[type=radio], input.checkbox, input.radio { position:
 
 /* TABLES --------------------------------------------------------------- */
 
-table { margin-bottom: 1.5em; width: 100%; }
+table { margin-bottom:; width: 100%; }
 th { font-weight: bold; }
-thead th { background: #c3d9ff; }
-th, td, caption { padding: 4px 10px 4px 5px; }
-tr.even td { background: #e5ecf9; }
+thead th { background:; }
+th, td, caption { padding:; }
+tr.even td { background:; }
 tfoot { font-style: italic; }
-caption { background: #eee; font-weight: bold; }
+caption { background:; font-weight: bold; }
 
 /* CLASSES -------------------------------------------------------------- */
 
