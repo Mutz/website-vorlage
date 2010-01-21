@@ -11,17 +11,17 @@
     <meta name="description" content="###" />
     <meta name="keywords" content="###,###,###" />
     <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="stylesheet" media="screen" href="css/screen.css" />
-    <!--<link rel="stylesheet" media="screen" href="css/lightbox.css" />-->
-    <!--><link rel="stylesheet" media="print" href="css/print.css" />-->
-    <!--[if lte IE 7]><link rel="stylesheet" media="screen" href="css/ie7.css" /><![endif]-->
-    <!--[if lte IE 6]><link rel="stylesheet" media="screen" href="css/ie6.css" /><![endif]-->
-    <!--<script src="js/jquery.js"></script>-->
-    <!--<script src="js/jquery.lightbox.min.js"></script>-->
-    <!--<script src="js/jquery.defuscate.js"></script>-->
-    <!--<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=###"></script>-->
-    <!--<script src="js/googlemaps.js"></script>-->
-    <!--<script src="js/onload.js"></script>-->
+    <!--<link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="css/screen.css" />-->
+    <!--<link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="css/lightbox.css" />-->
+    <!--<link rel="stylesheet" type="text/css" charset="utf-8" media="print" href="css/print.css" />-->
+    <!--[if lte IE 7]><link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="css/ie7.css" /><![endif]-->
+    <!--[if lte IE 6]><link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="css/ie6.css" /><![endif]-->
+    <!--<script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>-->
+    <!--<script type="text/javascript" charset="utf-8" src="js/jquery.lightbox.min.js"></script>-->
+    <!--<script type="text/javascript" charset="utf-8" src="js/jquery.defuscate.js"></script>-->
+    <!--<script type="text/javascript" charset="utf-8" src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=###"></script>-->
+    <!--<script type="text/javascript" charset="utf-8" src="js/googlemaps.js"></script>-->
+    <!--<script type="text/javascript" charset="utf-8" src="js/onload.js"></script>-->
 </head>
 
 <body>
@@ -133,7 +133,6 @@
             <p><label for="txt_telefon">Telefon</label> <input type="text" class="txt" id="txt_telefon" name="txt_telefon" size="24" value="<?php echo $telefon ?>" tabindex="4" /></p>
             <p><input type="submit" class="button" name="button_send" value="Anfrage abschicken" tabindex="5" /></p>
         </form>
-
     </div>
     
     <div id="footer"></div>
