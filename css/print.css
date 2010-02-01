@@ -1,3 +1,7 @@
+@import url(reset.css); /* Reset CSS */
+
+/* BODY ------------------------------------------------------------------ */
+
 body {
     line-height: 1.5;
     font-family: Helvetica, Arial, Verdana, sans-serif;
@@ -7,26 +11,13 @@ body {
     word-spacing: 1pt;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: Helvetica, Arial, sans-serif;
-}
+/* HEADINGS ------------------------------------------------------------- */
 
-code {
-    font: 0.9em Courier, monospace;
-}
+h1, h2, h3, h4, h5, h6 { font-family: Helvetica, Arial, sans-serif; }
 
-img {
-    float: left;
-    margin: 1.5em 1.5em 1.5em 0;
-}
+/* TYPOGRAPHY ----------------------------------------------------------- */
 
-a img {
-    border: none;
-}
-
-p img.top {
-    margin-top: 0;
-}
+code { font: 0.9em Courier, monospace; }
 
 hr {
     background: #CCC;
@@ -45,15 +36,28 @@ blockquote {
     font-size: 0.9em;
 }
 
+/* LINKS ---------------------------------------------------------------- */
+
 a:link, a:visited {
     background: transparent;
     font-weight: 700;
     text-decoration: underline;
 }
 
-#nav {
-    display: none;
+/* IMAGES & VIDEOS ------------------------------------------------------ */
+
+img {
+    float: left;
+    margin: 0 1.5em 1.5em 0;
 }
+
+/* FORMS ---------------------------------------------------------------- */
+
+/* TABLES --------------------------------------------------------------- */
+
+/* CLASSES -------------------------------------------------------------- */
+
+/* LAYOUT --------------------------------------------------------------- */
 
 #map {
     width: 15.0cm;
@@ -72,3 +76,7 @@ a:link, a:visited {
     text-decoration: none;
     color: #000;
 }
+
+/* NAVIGATION ----------------------------------------------------------- */
+
+#nav { display: none; }
