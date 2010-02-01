@@ -4,18 +4,33 @@
 
 body {
     line-height: 1.5;
-    font-family: Helvetica, Arial, Verdana, sans-serif;
-    color: #000;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #333;
     background: none;
     font-size: 10pt;
     word-spacing: 1pt;
+    margin: 0;
+    padding: 0;
 }
 
 /* HEADINGS ------------------------------------------------------------- */
 
-h1, h2, h3, h4, h5, h6 { font-family: Helvetica, Arial, sans-serif; }
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    color: #000;
+    clear: both;
+}
+
+h1 { font-size: 24pt; line-height: 1.1; margin-bottom: 12pt; }
+h2 { font-size: 18pt; line-height: 1.1; margin-bottom: 9pt; }
+h3 { font-size: 14pt; line-height: 1.1; margin-bottom: 7pt; }
+h4 { font-size: 12pt; line-height: 1.1; margin-bottom: 6pt; }
 
 /* TYPOGRAPHY ----------------------------------------------------------- */
+
+p, ul, ol, blockquote, table, form, fieldset { margin-bottom: 14pt; }
 
 code { font: 0.9em Courier, monospace; }
 
@@ -30,34 +45,161 @@ hr {
 }
 
 blockquote {
-    margin: 1.5em;
-    padding: 1em;
+    color: #8e8e8e;
+    font-family: Palatino, Georgia, Times, "Times New Roman", serif;
+    font-weight: normal;
     font-style: italic;
-    font-size: 0.9em;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    font-size: 18px;
+    line-height: 1.1;
+    margin: 1.5em;
 }
+
+/* Standard Quotes */
+:lang(de) { quotes: '\00BB' '\00AB' '\203A' '\2039'; }
+
+/* Blockquotes */
+blockquote { quotes: none; }
+blockquote p:first-child:before { content: '\00BB'; margin-left: -0.5em;}
+blockquote p:last-child:after  { content: '\00AB'; }
+
+strong { font-weight: bold; }
+em, dfn { font-style: italic; }
+dfn { font-weight: bold; }
+sup, sub { line-height: 0; }
+abbr { border-bottom: 1px dotted #986044; cursor: help; }
+
+li ul, li ol { margin: 0; }
+ul, ol { margin: 1.5em 0; }
+ul { margin-left: 30pt; list-style-type: square; }
+ol { margin-left: 30pt; list-style-type: decimal; }
+
+ins { text-decoration: underline; }
+del { text-decoration: line-through; }
 
 /* LINKS ---------------------------------------------------------------- */
 
 a:link, a:visited {
     background: transparent;
+    color: #000;
     font-weight: 700;
     text-decoration: underline;
+}
+
+#header a, #footer a {
+    text-decoration: none;
+    color: #000;
+}
+
+a[href]:after {
+    content: ' (' attr(href) ')';
+    font-style: italic;
+}
+
+#header a[href]:after,
+#footer a[href]:after {
+    content: '';
 }
 
 /* IMAGES & VIDEOS ------------------------------------------------------ */
 
 img {
-    float: left;
-    margin: 0 1.5em 1.5em 0;
+    margin: 0;
+    border: 1px solid #000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    -khtml-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    -o-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
 }
 
 /* FORMS ---------------------------------------------------------------- */
 
+label {
+    font-weight: bold;
+    display: block;
+}
+
+fieldset {
+    border: 1px solid #000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    -khtml-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    -o-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    margin-bottom: 30px;
+    background: #fff;
+    position: relative;
+}
+
+legend {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    -khtml-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    -o-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    font-family: Palatino, Georgia, Times, "Times New Roman", serif;
+    font-weight: bold;
+    background: #b8b8b8;
+    color: #fff;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    padding: 2px 5px;
+}
+
+form fieldset div { margin: 15px; }
+form fieldset legend + div { margin-top: 30px; }
+.submit_container { margin-top: -15px; }
+
+input[type="text"], textarea {
+    width: 99%;
+    padding: 5px 3px;
+    color: #000;
+    background: #ececec;
+    border: 1px solid #d1d1d1;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+textarea { height: 200px; }
+
+input[type="submit"], .submit_container input { display: none; }
+
 /* TABLES --------------------------------------------------------------- */
+
+table {
+    border: 1px solid #000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    -khtml-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    -o-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    width: 100%;
+    background: #fff;
+    padding: 15px;
+    border-collapse: separate;
+}
+
+th, tfoot td {
+    font-family: Palatino, Georgia, Times, "Times New Roman", serif;
+    font-weight: bold;
+    color: #000;
+    background: #dedede;
+    text-align: left;
+    padding: 5px 10px;
+}
+
+td { padding: 3px 10px; }
+tbody td { border-bottom: 1px solid #dedede; }
+tr.odd td { background: #ededed }
+tfoot td { font-style: italic; }
 
 /* CLASSES -------------------------------------------------------------- */
 
 /* LAYOUT --------------------------------------------------------------- */
+
+#nav { display: none; }
 
 #map {
     width: 15.0cm;
@@ -71,12 +213,3 @@ img {
     text-align: center;
     padding: 0.3cm;
 }
-
-#header a, #footer a {
-    text-decoration: none;
-    color: #000;
-}
-
-/* NAVIGATION ----------------------------------------------------------- */
-
-#nav { display: none; }
