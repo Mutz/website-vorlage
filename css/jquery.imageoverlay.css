@@ -1,0 +1,43 @@
+.image-overlay { list-style: none; text-align: left; }
+.image-overlay li { display: inline; }
+.image-overlay a:link, .image-overlay a:visited, .image-overlay a:hover, .image-overlay a:active { text-decoration: none; }
+.image-overlay a:link img, .image-overlay a:visited img, .image-overlay a:hover img, .image-overlay a:active img { border: none; }
+
+.image-overlay a {
+    margin: 0 15px 15px 0;
+    border: 1px solid #000;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    -khtml-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    -o-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+}
+
+.image-overlay img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+}  
+
+.image-overlay .caption {
+    float: left;
+    position: absolute;
+    background-color: #5e710c;
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    cursor: pointer;
+    opacity: .8;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); /* For IE 5-7 */
+    -MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; /* For IE 8 */
+}
+
+.image-overlay .caption p {
+    margin: 0;
+    padding: 0 8px;
+    color: #fff;
+}

@@ -12,16 +12,26 @@
     <meta name="keywords" content="###,###,###" />
     <link rel="shortcut icon" href="favicon.ico" />
     <!--<link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="css/screen.css" />-->
-    <!--<link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="css/lightbox.css" />-->
+    <!--<link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="css/jquery.fancybox.css" />-->
+    <!--<link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="css/jquery.imageoverlay.css" />-->
     <!--<link rel="stylesheet" type="text/css" charset="utf-8" media="print" href="css/print.css" />-->
     <!--[if lte IE 7]><link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="css/ie7.css" /><![endif]-->
     <!--[if lte IE 6]><link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="css/ie6.css" /><![endif]-->
     <!--<script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>-->
-    <!--<script type="text/javascript" charset="utf-8" src="js/jquery.lightbox.min.js"></script>-->
+    <!--<script type="text/javascript" charset="utf-8" src="js/jquery.easing.js"></script>-->
+    <!--<script type="text/javascript" charset="utf-8" src="js/jquery.mousewheel.js"></script>-->
+    <!--<script type="text/javascript" charset="utf-8" src="js/jquery.fancybox.js"></script>-->
+    <!--<script type="text/javascript" charset="utf-8" src="js/jquery.cycle.js"></script>-->
+    <!--<script type="text/javascript" charset="utf-8" src="js/jquery.imageoverlay.js"></script>-->
+    <!--<script type="text/javascript" charset="utf-8" src="js/jquery.innerfade.js"></script>-->
     <!--<script type="text/javascript" charset="utf-8" src="js/jquery.defuscate.js"></script>-->
     <!--<script type="text/javascript" charset="utf-8" src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=###"></script>-->
     <!--<script type="text/javascript" charset="utf-8" src="js/googlemaps.js"></script>-->
-    <!--<script type="text/javascript" charset="utf-8" src="js/onload.js"></script>-->
+    <script type="text/javascript" charset="utf-8">
+        $(document).ready(function() {
+            
+        });
+    </script>
 </head>
 
 <body>
