@@ -96,6 +96,34 @@ input[type=checkbox], input[type=radio], input.checkbox, input.radio { position:
 .notice a { color: #514721; }
 .success a { color: #264409; }
 
+/* Scalable Button */
+.awesome, .awesome:visited {
+    background: #000 url(img/button-overlay.png) repeat-x;
+    border: 0;
+    display: inline-block;
+    padding: 5px 10px 6px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -o-border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -khtml-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -o-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    position: relative;
+    cursor: pointer;
+}
+ 
+.awesome:hover { background-color: #222; color: #fff; }
+.awesome:active { margin-top: 1px; }
+
 /* TABLES --------------------------------------------------------------- */
 
 table { margin-bottom:; width: 100%; }
