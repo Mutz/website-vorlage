@@ -75,8 +75,8 @@ a:active { color:; }
 
 /* IMAGES & VIDEOS ------------------------------------------------------ */
 
-img.left { float: left; margin:1.5em 1.5em 1.5em 0; }
-img.right { float: right; margin:1.5em 0 1.5em 1.5em; }
+img.left { float: left; margin: 1.5em 1.5em 1.5em 0; }
+img.right { float: right; margin: 1.5em 0 1.5em 1.5em; }
 
 /* FORMS ---------------------------------------------------------------- */
 
