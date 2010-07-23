@@ -17,17 +17,17 @@
     <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" />
 
     <!-- CSS -->
-    <link rel="stylesheet" media="screen" href="/css/basic.css" />
+    <link rel="stylesheet" media="screen" href="css/basic.css" />
     
     <!--[if gte IE 7]><!--> 
-    <link rel="stylesheet" media="screen" href="/css/screen.css" />
+    <link rel="stylesheet" media="screen" href="css/screen.css" />
     <!--<![endif]--> 
 
-    <link rel="stylesheet" media="screen" href="/css/jquery.fancybox.css" />
-    <link rel="stylesheet" media="screen" href="/css/jquery.imageoverlay.css" />
+    <link rel="stylesheet" media="screen" href="css/jquery.fancybox.css" />
+    <link rel="stylesheet" media="screen" href="css/jquery.imageoverlay.css" />
     
     <!--[if lte IE 7]>
-    <link rel="stylesheet" media="screen" href="/css/ie7.css" />
+    <link rel="stylesheet" media="screen" href="css/ie7.css" />
     <![endif]-->
 
     <!--[if IE 6]>
@@ -35,10 +35,10 @@
     <![endif]-->
     
     <!--[if lte IE 6]>
-    <link rel="stylesheet" charset="utf-8" media="screen" href="/css/ie6.css" />
+    <link rel="stylesheet" media="screen" href="css/ie6.css" />
     <![endif]-->
 
-    <link rel="stylesheet" media="print" href="/css/print.css" />
+    <link rel="stylesheet" media="print" href="css/print.css" />
 
 </head>
 
@@ -161,16 +161,16 @@
 <!--[if lt IE 9]>
 <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
 <![endif]-->
-<script src="/js/jquery.js"></script>
-<script src="/js/jquery.easing.js"></script>
-<script src="/js/jquery.mousewheel.js"></script>
-<script src="/js/jquery.fancybox.js"></script>
-<script src="/js/jquery.cycle.js"></script>
-<script src="/js/jquery.imageoverlay.js"></script>
-<script src="/js/jquery.innerfade.js"></script>
-<script src="/js/jquery.defuscate.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.easing.js"></script>
+<script src="js/jquery.mousewheel.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/jquery.cycle.js"></script>
+<script src="js/jquery.imageoverlay.js"></script>
+<script src="js/jquery.innerfade.js"></script>
+<script src="js/jquery.defuscate.js"></script>
 <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=###"></script>
-<script src="/js/googlemaps.js"></script>
+<script src="js/googlemaps.js"></script>
 
 <script type="text/javascript" charset="utf-8">
 /* <![CDATA[ */

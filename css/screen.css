@@ -1,18 +1,69 @@
-@import url(reset.css); /* Reset CSS */
+/*  COLORS
+-----------------------------------------------------------------------------
 
-/* BODY ------------------------------------------------------------------ */
+    Hintergrund         
+    Text                
+    Links               
+    Besuchte Links      
+    Hover Links         
+    Überschriften       
+    Subüberschriften    
+    
+*/
 
-html {
-    background: #fff repeat 0 0;
+/* RESET
+-------------------------------------------------------------------------- */
+
+/* Based on http://meyerweb.com/eric/tools/css/reset/ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, 
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, 
+font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, 
+u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, 
+caption, tbody, tfoot, thead, tr, th, td { 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+ 
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, 
+q:before, q:after {
+    content: ''; 
+    content: none;
+}
+ 
+:focus { outline: 0; }
+
+ins { text-decoration: none; }
+
+del { text-decoration: line-through; }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
+a { outline: none; }
+
+/* GLOBAL
+-------------------------------------------------------------------------- */
+
 body {
+    background: #fff repeat 0 0;
     color: #222;
     font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
     font-size: 87.5%;
     line-height: 1.5;
 }
 
+/* Convert with http://www.fontsquirrel.com/fontface/generator */
 @font-face {
     font-family: '';
     src: url('fonts/.eot');
@@ -22,22 +73,26 @@ body {
         url('fonts/.svg#') format('svg');
 }
 
-/* HEADINGS ------------------------------------------------------------- */
+/* TYPOGRAPHY
+-------------------------------------------------------------------------- */
 
-h1, h2, h3, h4, h5, h6 { font-weight: normal; color: #111; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; color:; }
 
-h1 { font-size: 3em; line-height: 1; margin-bottom: 0.5em; }
-h2 { font-size: 2em; margin-bottom: 0.75em; }
-h3 { font-size: 1.5em; line-height: 1; margin-bottom: 1em; }
-h4 { font-size: 1.2em; line-height: 1.25; margin-bottom: 1.25em; }
-h5 { font-size: 1em; font-weight: bold; margin-bottom: 1.5em; }
-h6 { font-size: 1em; font-weight: bold; }
+h1 { font-size:; margin-bottom:; }
+h2 { font-size:; margin-bottom:; }
+h3 { font-size:; margin-bottom:; }
+h4 { font-size:; margin-bottom:; }
+h5 { font-size:; margin-bottom:; }
+h6 { font-size:; margin-bottom:; }
 
-/* TYPOGRAPHY ----------------------------------------------------------- */
+p { margin-bottom:; }
 
-p { margin: 0 0 1.5em; }
+blockquote {
+    margin:;
+    color:;
+    font-style: italic;
+}
 
-blockquote { margin:1.5em; color:#666; font-style: italic; }
 q { font-style: italic; }
 
 strong { font-weight: bold; }
@@ -45,36 +100,46 @@ em, dfn { font-style: italic; }
 dfn { font-weight: bold; }
 sup, sub { line-height: 0; }
 abbr { border-bottom: 1px dotted #666; cursor: help; }
-address { margin: 0 0 1.5em; font-style: italic; }
+address { }
 
-pre { margin: 1.5em 0; white-space: pre; }
-pre, code { font: 1em 'Andale Mono', 'Lucida Console', monospace; line-height: 1.5; }
+pre {
+    margin: 1.5em 0;
+    white-space: pre;
+}
+
+pre, code {
+    font: 1.0em 'Andale Mono', 'Lucida Console', monospace;
+    line-height: 1.5;
+}
 
 li ul, li ol { margin: 0; }
-ul, ol { margin: 0 1.5em 1.5em 0; padding-left: 3.333em; }
+ul, ol { margin:; padding-left:; }
 ul { list-style-type: disc; }
 ol { list-style-type: decimal; }
-dl { margin: 0 0 1.5em 0; }
+dl { margin:; }
 dl dt { font-weight: bold; }
-dd { margin-left: 1.5em; }
+dd { margin-left:; }
 
 ins { text-decoration: underline; }
-del { color: #666; text-decoration: line-through; }
+del { color:; text-decoration: line-through; }
 
-/* LINKS ---------------------------------------------------------------- */
+/* LINKS
+-------------------------------------------------------------------------- */
 
-a:link { color: #000; text-decoration: underline; }
-a:visited { color: #000; text-decoration: underline; }
-a:hover { color: #009; }
-a:focus { color: #009; }
-a:active { color: #009; }
+a:link { color:; text-decoration: underline; }
+a:visited { color:; text-decoration: underline; }
+a:hover { color:; }
+a:focus { color:; }
+a:active { color:; }
 
-/* IMAGES & VIDEOS ------------------------------------------------------ */
+/* IMAGES
+-------------------------------------------------------------------------- */
 
-img.left { float: left; margin:1.5em 1.5em 1.5em 0; }
-img.right { float: right; margin:1.5em 0 1.5em 1.5em; }
+img.left { float: left; margin: 1.5em 1.5em 1.5em 0; }
+img.right { float: right; margin: 1.5em 0 1.5em 1.5em; }
 
-/* FORMS ---------------------------------------------------------------- */
+/* FORMS
+-------------------------------------------------------------------------- */
 
 label { font-weight: bold; }
 fieldset { padding: 1.5em; margin: 0 0 1.5em 0; border: 1px solid #ccc; }
@@ -93,41 +158,75 @@ input[type=checkbox], input[type=radio], input.checkbox, input.radio { position:
 .notice a { color: #514721; }
 .success a { color: #264409; }
 
-/* TABLES --------------------------------------------------------------- */
+/* Scalable Button */
+.awesome, .awesome:visited {
+    background: #000 url(img/button-overlay.png) repeat-x;
+    border: 0;
+    display: inline-block;
+    padding: 5px 10px 6px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -o-border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -khtml-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -o-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    position: relative;
+    cursor: pointer;
+}
+ 
+.awesome:hover { background-color: #222; color: #fff; }
+.awesome:active { margin-top: 1px; }
 
-table { margin-bottom: 1.5em; width: 100%; }
+/* TABLES
+-------------------------------------------------------------------------- */
+
+table { margin-bottom:; width: 100%; }
 th { font-weight: bold; }
-thead th { background: #c3d9ff; }
-th, td, caption { padding: 4px 10px 4px 5px; }
-tr.even td { background: #e5ecf9; }
+thead th { background:; }
+th, td, caption { padding:; }
+tr.even td { background:; }
 tfoot { font-style: italic; }
-caption { background: #eee; font-weight: bold; }
+caption { background:; font-weight: bold; }
 
-/* CLASSES -------------------------------------------------------------- */
+/* STRUCTURE
+-------------------------------------------------------------------------- */
 
-.hide { display: none; }
-.quiet { color: #666; }
-.highlight { background: #ff0; }
-.first { margin-left: 0; padding-left: 0; }
-.last { margin-right: 0; padding-right: 0; }
-.top { margin-top: 0; padding-top: 0; }
-.bottom { margin-bottom: 0; padding-bottom: 0; }
+#nav {
+    
+}
 
-/* LAYOUT --------------------------------------------------------------- */
+#nav li {
+    
+}
+
+#nav a {
+    
+}
 
 #page { margin: 0 auto; }
 
-#header {}
-#footer {}
+#header {
+    
+}
 
-#body {}
+#footer {
+    
+}
 
-#map { width: 500px; height: 400px; }
+#body {
+    
+}
 
-/* ###################### ----------------------------------------------- */
-
-/* NAVIGATION ----------------------------------------------------------- */
-
-#nav {}
-#nav li {}
-#nav a {}
+#map {
+    width: 500px;
+    height: 400px;
+}

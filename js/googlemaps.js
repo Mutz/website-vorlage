@@ -13,6 +13,8 @@ $(document).ready(function() {
             // map.setMapType(G_SATELLITE_MAP); /* Satellitenaufnahme */
             // map.setMapType(G_PHYSICAL_MAP); /* Gelände */
             map.setUIToDefault(); /* Standard-Navigation */
+            // map.addControl(new GOverviewMapControl()); /* Übersichtskarte einblenden */
+            // map.addControl(new GScaleControl()); /* Massstab einblenden */
             // map.addControl(new GLargeMapControl()); /* Große Navigation (alt) */
             // map.addControl(new GSmallMapControl()); /* Kleine Navigation (alt) */
             // map.addControl(new GMapTypeControl()); /* Karte, Satellite, Hybrid (alt) */
@@ -21,8 +23,8 @@ $(document).ready(function() {
 
             // Icon
             var MyIcon = new GIcon(G_DEFAULT_ICON);
-            MyIcon.image = "css/img/pin.png";
-            //MyIcon.shadow = "css/img/pin_shadow.png";
+            MyIcon.image = "css/img/googlemaps/pin.png";
+            //MyIcon.shadow = "css/img/googlemaps/pin_shadow.png";
             //MyIcon.shadowSize=new GSize(19,19);
             MyIcon.iconSize = new GSize(20, 34);
             MyIcon.iconWindowAnchor = new GPoint(10, 10);
