@@ -17,12 +17,7 @@
     <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" />
 
     <!-- CSS -->
-    <link rel="stylesheet" media="screen" href="css/basic.css" />
-    
-    <!--[if gte IE 7]><!--> 
     <link rel="stylesheet" media="screen" href="css/screen.css" />
-    <!--<![endif]--> 
-
     <link rel="stylesheet" media="screen" href="css/jquery.fancybox.css" />
     <link rel="stylesheet" media="screen" href="css/jquery.imageoverlay.css" />
     
@@ -30,10 +25,6 @@
     <link rel="stylesheet" media="screen" href="css/ie7.css" />
     <![endif]-->
 
-    <!--[if IE 6]>
-    <link rel="stylesheet" media="screen, projection" href="http://universal-ie6-css.googlecode.com/files/ie6.1.1.css" />
-    <![endif]-->
-    
     <!--[if lte IE 6]>
     <link rel="stylesheet" media="screen" href="css/ie6.css" />
     <![endif]-->
