@@ -13,7 +13,7 @@
     <meta name="keywords" content="###" />
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="shortcut icon" href="favicon.ico" />
     <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" />
 
     <!-- CSS -->
