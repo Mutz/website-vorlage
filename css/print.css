@@ -38,7 +38,9 @@ table {
 }
 
 a { outline: none; }
-/* BODY ------------------------------------------------------------------ */
+
+/* BODY
+-------------------------------------------------------------------------- */
 
 body {
     line-height: 1.5;
@@ -51,7 +53,8 @@ body {
     padding: 0;
 }
 
-/* HEADINGS ------------------------------------------------------------- */
+/* HEADINGS
+-------------------------------------------------------------------------- */
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -66,7 +69,8 @@ h2 { font-size: 18pt; line-height: 1.1; margin-bottom: 9pt; }
 h3 { font-size: 14pt; line-height: 1.1; margin-bottom: 7pt; }
 h4 { font-size: 12pt; line-height: 1.1; margin-bottom: 6pt; }
 
-/* TYPOGRAPHY ----------------------------------------------------------- */
+/* TYPOGRAPHY
+-------------------------------------------------------------------------- */
 
 p, ul, ol, blockquote, table, form, fieldset { margin-bottom: 14pt; }
 
@@ -115,7 +119,8 @@ ol { margin-left: 30pt; list-style-type: decimal; }
 ins { text-decoration: underline; }
 del { text-decoration: line-through; }
 
-/* LINKS ---------------------------------------------------------------- */
+/* LINKS
+-------------------------------------------------------------------------- */
 
 a:link, a:visited {
     background: transparent;
@@ -139,7 +144,8 @@ a[href]:after {
     content: '';
 }
 
-/* IMAGES & VIDEOS ------------------------------------------------------ */
+/* IMAGES & VIDEOS
+-------------------------------------------------------------------------- */
 
 img {
     margin: 0;
@@ -151,7 +157,8 @@ img {
     -o-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
 }
 
-/* FORMS ---------------------------------------------------------------- */
+/* FORMS
+-------------------------------------------------------------------------- */
 
 label {
     font-weight: bold;
@@ -204,7 +211,8 @@ textarea { height: 200px; }
 
 input[type="submit"], .submit_container input { display: none; }
 
-/* TABLES --------------------------------------------------------------- */
+/* TABLES
+-------------------------------------------------------------------------- */
 
 table {
     border: 1px solid #000;
@@ -233,9 +241,8 @@ tbody td { border-bottom: 1px solid #dedede; }
 tr.odd td { background: #ededed }
 tfoot td { font-style: italic; }
 
-/* CLASSES -------------------------------------------------------------- */
-
-/* LAYOUT --------------------------------------------------------------- */
+/* LAYOUT
+-------------------------------------------------------------------------- */
 
 #nav { display: none; }
 
