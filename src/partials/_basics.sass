@@ -1,0 +1,117 @@
+/* BASICS */
+html
+    overflow-y: scroll
+
+body
+    background: $bodyBackground repeat 0 0
+    color: $bodyColor
+    +mainFontStructure
+
++font-face("Blooming Grove", font-files("bgrove.ttf", truetype, "bgrove.otf", opentype)) 
+
+h1, h2, h3, h4, h5, h6
+    +headlineFontStructure
+    
+h1
+    font-size: 24px
+    margin-bottom: 5px
+
+h2
+    font-size: 18px
+    margin-bottom: 5px
+
+h3
+    font-size: 16px
+    margin-bottom: 5px
+
+p
+    margin-bottom: 1.5em
+
+blockquote
+    margin: 1.5em 0
+    color: #999
+    font-style: italic
+
+q
+    font-style: italic
+
+strong
+    font-weight: bold
+
+em, dfn
+    font-style: italic
+
+dfn
+    font-weight: bold
+
+sup, sub
+    line-height: 0
+
+abbr
+    border-bottom: 1px dotted #666
+    cursor: help
+
+address
+    font-style: italic
+
+pre
+    margin: 1.5em 0
+    white-space: pre
+
+pre, code
+    +codeFontStructure
+
+li
+    ul
+        margin: 0
+    ol
+        margin: 0
+
+ul, ol
+    margin: 1.5 0
+    padding-left: 15px
+
+ul
+    list-style-type: circle
+
+ol
+    list-style-type: decimal
+
+dl
+    margin: 1.5em 0
+    dt
+        font-weight: bold
+    dd
+        margin-left: 15px
+
+ins
+    text-decoration: underline
+
+del
+    text-decoration: line-through
+
+/* LINKS */
+a:hover, a:active
+    outline: none
+
+a
+    +hover-link
+    +link-colors($linkColor,$linkActiveColor)
+
+/* IMAGES */
+.ir
+    display: block
+    text-indent:  -9999em
+    overflow: hidden
+    background-repeat: no-repeat
+    text-align: left
+    direction: ltr
+
+img.left
+    float: left
+    margin: 0 1.5em 1.5em 0
+
+img.right
+    float: right
+    margin: 0 0 1.5em 1.5em
+
