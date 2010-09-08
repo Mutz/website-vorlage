@@ -1,76 +1,31 @@
-/* RESET
+/* PRINT STYLES
 -------------------------------------------------------------------------- */
+* { background: transparent !important; color: #444 !important; text-shadow: none !important; }
 
-/* Based on http://meyerweb.com/eric/tools/css/reset/ */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, 
-blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, 
-font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, 
-u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, 
-caption, tbody, tfoot, thead, tr, th, td { 
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-}
- 
-ol, ul { list-style: none; }
+a, a:visited { color: #444 !important; text-decoration: underline; }
+a:after { content: " (" attr(href) ")"; } 
 
-blockquote, q { quotes: none; }
+abbr:after { content: " (" attr(title) ")"; }
 
-blockquote:before, blockquote:after, 
-q:before, q:after {
-    content: ''; 
-    content: none;
-}
- 
-:focus { outline: 0; }
+pre, blockquote { page-break-inside: avoid; }
 
-ins { text-decoration: none; }
+@page { margin: 0.5cm; }
 
-del { text-decoration: line-through; }
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-a { outline: none; }
-
-/* BODY
--------------------------------------------------------------------------- */
+p, h2, h3 { orphans: 3; widows: 3; }
+h2, h3 { page-break-after: avoid; }
+thead { display: table-header-group; }
 
 body {
-    line-height: 1.5;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: #333;
-    background: none;
+    line-height: 1.5; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 10pt;
     word-spacing: 1pt;
-    margin: 0;
-    padding: 0;
 }
 
-/* HEADINGS
--------------------------------------------------------------------------- */
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: normal;
-    text-shadow: 0 2px 5px rgba(0,0,0,0.25);
-    color: #000;
-    clear: both;
-}
-
+h1, h2, h3, h4, h5, h6 { font-weight: normal; clear: both; }
 h1 { font-size: 24pt; line-height: 1.1; margin-bottom: 12pt; }
 h2 { font-size: 18pt; line-height: 1.1; margin-bottom: 9pt; }
 h3 { font-size: 14pt; line-height: 1.1; margin-bottom: 7pt; }
 h4 { font-size: 12pt; line-height: 1.1; margin-bottom: 6pt; }
-
-/* TYPOGRAPHY
--------------------------------------------------------------------------- */
 
 p, ul, ol, blockquote, table, form, fieldset { margin-bottom: 14pt; }
 
@@ -119,15 +74,6 @@ ol { margin-left: 30pt; list-style-type: decimal; }
 ins { text-decoration: underline; }
 del { text-decoration: line-through; }
 
-/* LINKS
--------------------------------------------------------------------------- */
-
-a:link, a:visited {
-    background: transparent;
-    color: #000;
-    font-weight: 700;
-    text-decoration: underline;
-}
 
 #header a, #footer a {
     text-decoration: none;
@@ -144,58 +90,16 @@ a[href]:after {
     content: '';
 }
 
-/* IMAGES & VIDEOS
--------------------------------------------------------------------------- */
+img { margin: 0; border: 1px solid #000; }
 
-img {
-    margin: 0;
-    border: 1px solid #000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.25);
-    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
-    -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
-    -khtml-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
-    -o-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
-}
-
-/* FORMS
--------------------------------------------------------------------------- */
-
-label {
-    font-weight: bold;
-    display: block;
-}
+label { font-weight: bold; display: block; }
 
 fieldset {
     border: 1px solid #000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.25);
-    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
-    -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
-    -khtml-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
-    -o-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
     margin-bottom: 30px;
     background: #fff;
     position: relative;
 }
-
-legend {
-    box-shadow: 0 2px 5px rgba(0,0,0,0.25);
-    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
-    -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
-    -khtml-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
-    -o-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
-    font-family: Palatino, Georgia, Times, "Times New Roman", serif;
-    font-weight: bold;
-    background: #b8b8b8;
-    color: #fff;
-    position: absolute;
-    top: -10px;
-    left: 10px;
-    padding: 2px 5px;
-}
-
-form fieldset div { margin: 15px; }
-form fieldset legend + div { margin-top: 30px; }
-.submit_container { margin-top: -15px; }
 
 input[type="text"], textarea {
     width: 99%;
@@ -208,19 +112,10 @@ input[type="text"], textarea {
 }
 
 textarea { height: 200px; }
-
 input[type="submit"], .submit_container input { display: none; }
-
-/* TABLES
--------------------------------------------------------------------------- */
 
 table {
     border: 1px solid #000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.25);
-    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
-    -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
-    -khtml-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
-    -o-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
     width: 100%;
     background: #fff;
     padding: 15px;
@@ -228,7 +123,6 @@ table {
 }
 
 th, tfoot td {
-    font-family: Palatino, Georgia, Times, "Times New Roman", serif;
     font-weight: bold;
     color: #000;
     background: #dedede;
@@ -241,25 +135,8 @@ tbody td { border-bottom: 1px solid #dedede; }
 tr.odd td { background: #ededed }
 tfoot td { font-style: italic; }
 
-/* LAYOUT
--------------------------------------------------------------------------- */
-
 #nav { display: none; }
-
-#map {
-    width: 15.0cm;
-    height: 10.0cm;
-    border: 1px solid #000;
-    margin-bottom: 0.5cm;
-}
-
-#map img {
-    box-shadow: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    -khtml-box-shadow: none;
-    -o-box-shadow: none;
-}
+#map { width: 15.0cm; height: 10.0cm; border: 1px solid #000; margin-bottom: 0.5cm; }
 
 #header h1 { margin-bottom: 0; }
 #header { margin-bottom: 1cm; }
