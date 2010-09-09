@@ -65,20 +65,20 @@ body {
 
 /* TYPOGRAPHY
 -------------------------------------------------------------------------- */
-h1, h2, h3, h4, h5, h6 { font-weight: normal; color:; }
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    color: #000;
+}
 
-h1 { font-size:; margin-bottom:; }
-h2 { font-size:; margin-bottom:; }
-h3 { font-size:; margin-bottom:; }
-h4 { font-size:; margin-bottom:; }
-h5 { font-size:; margin-bottom:; }
-h6 { font-size:; margin-bottom:; }
+h1 { font-size: 24px; margin-bottom: 10px; }
+h2 { font-size: 18px; margin-bottom: 5px; }
+h3 { font-size: 16px; margin-bottom: 5px; }
 
-p { margin-bottom:; }
+p { margin-bottom: 1.5em; }
 
 blockquote {
-    margin:;
-    color:;
+    margin: 1.5em 0;
+    color: #000;
     font-style: italic;
 }
 
@@ -89,7 +89,7 @@ em, dfn { font-style: italic; }
 dfn { font-weight: bold; }
 sup, sub { line-height: 0; }
 abbr { border-bottom: 1px dotted #666; cursor: help; }
-address { }
+address { font-style: italic; }
 
 pre {
     margin: 1.5em 0;
@@ -102,24 +102,24 @@ pre, code {
 }
 
 li ul, li ol { margin: 0; }
-ul, ol { margin:; padding-left:; }
+ul, ol { margin: 1.5em 0; }
 ul { list-style-type: disc; }
 ol { list-style-type: decimal; }
-dl { margin:; }
+dl { margin: 1.5em; }
 dl dt { font-weight: bold; }
-dd { margin-left:; }
+dd { margin-left: 1.5em; }
 
 ins { text-decoration: underline; }
-del { color:; text-decoration: line-through; }
+del { text-decoration: line-through; }
 
 /* LINKS
 -------------------------------------------------------------------------- */
 a:hover, a:active { outline: none; } 
-a:link { color:; text-decoration: underline; }
-a:visited { color:; text-decoration: underline; }
-a:hover { color:; }
-a:focus { color:; }
-a:active { color:; }
+a:link { color: #000; text-decoration: underline; }
+a:visited { color: #000; text-decoration: underline; }
+a:hover { color: #000; }
+a:focus { color: #000; }
+a:active { color: #000; }
 
 /* IMAGES
 -------------------------------------------------------------------------- */
@@ -179,46 +179,65 @@ input[type=checkbox], input[type=radio], input.checkbox, input.radio { position:
 /* TABLES
 -------------------------------------------------------------------------- */
 
-table { margin-bottom:; width: 100%; }
+table { margin: 1.5em 0; width: 100%; }
 th { font-weight: bold; }
-thead th { background:; }
-th, td, caption { padding:; }
-tr.even td { background:; }
+thead th { background: #000; }
+th, td, caption { padding: 0.25em; }
+tr.even td { background: #000; }
 tfoot { font-style: italic; }
-caption { background:; font-weight: bold; }
+caption { background: #000; font-weight: bold; }
 
 /* STRUCTURE
 -------------------------------------------------------------------------- */
 
 #nav {
-    
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 #nav li {
-    
+    float: left;
+    margin-left: ;
 }
 
 #nav a {
-    
+    display: block;
 }
 
 #page { margin: 0 auto; }
 
 #header {
-    
-}
-
-#footer {
-    
+    height: ;
+    background: #000 url(img/) repeat-x 0 0;
 }
 
 #body {
     
 }
 
+#main {
+    width: ;
+    float: left;
+    margin: 0 0 0 0;
+}
+
+#aside {
+    width: ;
+    float: right;
+    margin: 0 0 0 0;
+}
+
 #map {
     width: 500px;
     height: 400px;
+    border: 5px solid #000;
+    margin-bottom: 1.5em;
+}
+
+#footer {
+    clear: both;
+    background: #000 url(img/) repeat-x 0 0;
 }
 
 /* PLUGINS
