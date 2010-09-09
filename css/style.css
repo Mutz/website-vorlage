@@ -37,9 +37,13 @@ table {
 
 a { outline: none; }
 
+body { font: 13px/1.231 sans-serif; *font-size: small; }
+select, input, textarea, button { font: 99% sans-serif; }
+
 /* GLOBAL
 -------------------------------------------------------------------------- */
 html { overflow-y: scroll; }
+html { -webkit-font-smoothing: antialiased; }
 
 body {
     background: #fff repeat 0 0;
@@ -120,6 +124,7 @@ a:active { color:; }
 /* IMAGES
 -------------------------------------------------------------------------- */
 .ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ie7 img { -ms-interpolation-mode: bicubic; }
 img.left { float: left; margin: 0 1.5em 1.5em 0; }
 img.right { float: right; margin: 0 0 1.5em 1.5em; }
 
