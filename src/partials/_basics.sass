@@ -1,6 +1,14 @@
+body
+    font: 13px/1.231 sans-serif
+    *font-size: small
+
+select, input, textarea, button
+    font: 99% sans-serif
+
 /* BASICS */
 html
     overflow-y: scroll
+    -webkit-font-smoothing: antialiased
 
 body
     background: $bodyBackground repeat 0 0
@@ -106,6 +114,9 @@ a
     background-repeat: no-repeat
     text-align: left
     direction: ltr
+
+.ie7 img
+    -ms-interpolation-mode: bicubic
 
 img.left
     float: left

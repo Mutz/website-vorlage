@@ -13,8 +13,12 @@ q:before, q:after, blockquote:before, blockquote:after { content: ""; }
 
 a img { border: none; }
 
+body { font: 13px/1.231 sans-serif; *font-size: small; }
+
+select, input, textarea, button { font: 99% sans-serif; }
+
 /* BASICS */
-html { overflow-y: scroll; }
+html { overflow-y: scroll; -webkit-font-smoothing: antialiased; }
 
 body { background: white repeat 0 0; color: #444444; font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; font-size: 87.5%; line-height: 1.5; }
 
@@ -76,6 +80,8 @@ a:hover { color: black; }
 
 /* IMAGES */
 .ir { display: block; text-indent: -9999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+
+.ie7 img { -ms-interpolation-mode: bicubic; }
 
 img.left { float: left; margin: 0 1.5em 1.5em 0; }
 
