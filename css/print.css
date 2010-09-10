@@ -4,7 +4,6 @@
 
 a, a:visited { color: #444 !important; text-decoration: underline; }
 a:after { content: " (" attr(href) ")"; } 
-
 abbr:after { content: " (" attr(title) ")"; }
 
 pre, blockquote { page-break-inside: avoid; }
@@ -68,8 +67,8 @@ abbr { border-bottom: 1px dotted #986044; cursor: help; }
 
 li ul, li ol { margin: 0; }
 ul, ol { margin: 1.5em 0; }
-ul { margin-left: 30pt; list-style-type: square; }
-ol { margin-left: 30pt; list-style-type: decimal; }
+ul { list-style-type: square; }
+ol { list-style-type: decimal; }
 
 ins { text-decoration: underline; }
 del { text-decoration: line-through; }
@@ -78,11 +77,6 @@ del { text-decoration: line-through; }
 #header a, #footer a {
     text-decoration: none;
     color: #000;
-}
-
-a[href]:after {
-    content: ' (' attr(href) ')';
-    font-style: italic;
 }
 
 #header a[href]:after,
