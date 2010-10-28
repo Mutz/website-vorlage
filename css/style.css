@@ -13,30 +13,21 @@ caption, tbody, tfoot, thead, tr, th, td {
     vertical-align: baseline;
     background: transparent;
 }
- 
 ol, ul { list-style: none; }
-
 blockquote, q { quotes: none; }
-
 blockquote:before, blockquote:after, 
 q:before, q:after {
     content: ''; 
     content: none;
 }
- 
 :focus { outline: 0; }
-
 ins { text-decoration: none; }
-
 del { text-decoration: line-through; }
-
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
 a { outline: none; }
-
 body { font: 13px/1.231 sans-serif; *font-size: small; }
 select, input, textarea, button { font: 99% sans-serif; }
 
@@ -44,7 +35,6 @@ select, input, textarea, button { font: 99% sans-serif; }
 -------------------------------------------------------------------------- */
 html { overflow-y: scroll; }
 html { -webkit-font-smoothing: antialiased; }
-
 body {
     background: #fff repeat 0 0;
     color: #444;
@@ -69,38 +59,30 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
     color: #000;
 }
-
 h1 { font-size: 24px; margin-bottom: 10px; }
 h2 { font-size: 18px; margin-bottom: 5px; }
 h3 { font-size: 16px; margin-bottom: 5px; }
-
 p { margin-bottom: 1.5em; }
-
 blockquote {
     margin: 1.5em 0;
     color: #000;
     font-style: italic;
 }
-
 q { font-style: italic; }
-
 strong { font-weight: bold; }
 em, dfn { font-style: italic; }
 dfn { font-weight: bold; }
 sup, sub { line-height: 0; }
 abbr { border-bottom: 1px dotted #666; cursor: help; }
 address { font-style: italic; }
-
 pre {
     margin: 1.5em 0;
     white-space: pre;
 }
-
 pre, code {
     font: 1.0em 'Andale Mono', 'Lucida Console', monospace;
     line-height: 1.5;
 }
-
 li ul, li ol { margin: 0; }
 ul, ol { margin: 1.5em 0; }
 ul { list-style-type: disc; }
@@ -108,7 +90,6 @@ ol { list-style-type: decimal; }
 dl { margin: 1.5em; }
 dl dt { font-weight: bold; }
 dd { margin-left: 1.5em; }
-
 ins { text-decoration: underline; }
 del { text-decoration: line-through; }
 
@@ -130,7 +111,6 @@ img.right { float: right; margin: 0 0 1.5em 1.5em; }
 
 /* FORMS
 -------------------------------------------------------------------------- */
-
 label { font-weight: bold; }
 fieldset { padding: 1.5em; margin: 0 0 1.5em 0; border: 1px solid #ccc; }
 legend { font-weight: bold; font-size: 1.2em; }
@@ -147,7 +127,6 @@ input[type=checkbox], input[type=radio], input.checkbox, input.radio { position:
 .error a { color: #8a1f11; }
 .notice a { color: #514721; }
 .success a { color: #264409; }
-
 /* Scalable Button */
 .awesome, .awesome:visited {
     background: #000 url(img/button-overlay.png) repeat-x;
@@ -172,13 +151,11 @@ input[type=checkbox], input[type=radio], input.checkbox, input.radio { position:
     position: relative;
     cursor: pointer;
 }
- 
 .awesome:hover { background-color: #222; color: #fff; }
 .awesome:active { margin-top: 1px; }
 
 /* TABLES
 -------------------------------------------------------------------------- */
-
 table { margin: 1.5em 0; width: 100%; }
 th { font-weight: bold; }
 thead th { background: #000; }
@@ -189,52 +166,42 @@ caption { background: #000; font-weight: bold; }
 
 /* STRUCTURE
 -------------------------------------------------------------------------- */
-
 #nav {
     position: absolute;
     right: 0;
     top: 0;
 }
-
 #nav li {
     float: left;
     margin-left: ;
 }
-
 #nav a {
     display: block;
 }
-
 #page { margin: 0 auto; }
 
 #header {
     height: ;
     background: #000 url(img/) repeat-x 0 0;
 }
-
 #body {
-    
 }
-
 #main {
     width: ;
     float: left;
     margin: 0 0 0 0;
 }
-
 #aside {
     width: ;
     float: right;
     margin: 0 0 0 0;
 }
-
 #map {
     width: 500px;
     height: 400px;
     border: 5px solid #000;
     margin-bottom: 1.5em;
 }
-
 #footer {
     clear: both;
     background: #000 url(img/) repeat-x 0 0;
@@ -247,7 +214,6 @@ caption { background: #000; font-weight: bold; }
 .image-overlay li { display: inline; }
 .image-overlay a:link, .image-overlay a:visited, .image-overlay a:hover, .image-overlay a:active { text-decoration: none; }
 .image-overlay a:link img, .image-overlay a:visited img, .image-overlay a:hover img, .image-overlay a:active img { border: none; }
-
 .image-overlay a {
     margin: 0 15px 15px 0;
     border: 1px solid #000;
@@ -260,14 +226,12 @@ caption { background: #000; font-weight: bold; }
     -khtml-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
     -o-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
 }
-
 .image-overlay img {
     position: absolute;
     top: 0;
     left: 0;
     border: 0;
 }  
-
 .image-overlay .caption {
     float: left;
     position: absolute;
@@ -280,7 +244,6 @@ caption { background: #000; font-weight: bold; }
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); /* For IE 5-7 */
     -MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; /* For IE 8 */
 }
-
 .image-overlay .caption p {
     margin: 0;
     padding: 0 8px;
@@ -301,12 +264,10 @@ caption { background: #000; font-weight: bold; }
     z-index: 1104;
     display: none;
 }
-
 * html #fancybox-loading {  /* IE6 */
     position: absolute;
     margin-top: 0;
 }
-
 #fancybox-loading div {
     position: absolute;
     top: 0;
@@ -315,7 +276,6 @@ caption { background: #000; font-weight: bold; }
     height: 480px;
     background-image: url('img/fancybox/fancybox.png');
 }
-
 #fancybox-overlay {
     position: fixed;
     top: 0;
@@ -326,12 +286,10 @@ caption { background: #000; font-weight: bold; }
     z-index: 1100;
     display: none;
 }
-
 * html #fancybox-overlay {  /* IE6 */
     position: absolute;
     width: 100%;
 }
-
 #fancybox-tmp {
     padding: 0;
     margin: 0;
@@ -339,7 +297,6 @@ caption { background: #000; font-weight: bold; }
     overflow: auto;
     display: none;
 }
-
 #fancybox-wrap {
     position: absolute;
     top: 0;
@@ -349,14 +306,12 @@ caption { background: #000; font-weight: bold; }
     z-index: 1101;
     display: none;
 }
-
 #fancybox-outer {
     position: relative;
     width: 100%;
     height: 100%;
     background: #FFF;
 }
-
 #fancybox-inner {
     position: absolute;
     top: 0;
@@ -368,7 +323,6 @@ caption { background: #000; font-weight: bold; }
     outline: none;
     overflow: hidden;
 }
-
 #fancybox-hide-sel-frame {
     position: absolute;
     top: 0;
@@ -377,7 +331,6 @@ caption { background: #000; font-weight: bold; }
     height: 100%;
     background: transparent;
 }
-
 #fancybox-close {
     position: absolute;
     top: -15px;
@@ -390,21 +343,18 @@ caption { background: #000; font-weight: bold; }
     z-index: 1103;
     display: none;
 }
-
 #fancybox_error {
     color: #444;
     font: normal 12px/20px Arial;
     padding: 7px;
     margin: 0;
 }
-
 #fancybox-content {
     height: auto;
     width: auto;
     padding: 0;
     margin: 0;
 }
-
 #fancybox-img {
     width: 100%;
     height: 100%;
@@ -416,7 +366,6 @@ caption { background: #000; font-weight: bold; }
     vertical-align: top;
     -ms-interpolation-mode: bicubic;
 }
-
 #fancybox-frame {
     position: relative;
     width: 100%;
@@ -424,7 +373,6 @@ caption { background: #000; font-weight: bold; }
     border: none;
     display: block;
 }
-
 #fancybox-title {
     position: absolute;
     bottom: 0;
@@ -433,47 +381,39 @@ caption { background: #000; font-weight: bold; }
     font-size: 12px;
     z-index: 1102;
 }
-
 .fancybox-title-inside {
     padding: 10px 0;
     text-align: center;
     color: #333;
 }
-
 .fancybox-title-outside {
     padding-top: 5px;
     color: #FFF;
     text-align: center;
     font-weight: bold;
 }
-
 .fancybox-title-over {
     color: #FFF;
     text-align: left;
 }
-
 #fancybox-title-over {
     padding: 10px;
     background-image: url('img/fancybox/fancy_title_over.png');
     display: block;
 }
-
 #fancybox-title-wrap {
     display: inline-block;
 }
-
 #fancybox-title-wrap span {
     height: 32px;
     float: left;
 }
-
 #fancybox-title-left {
     padding-left: 15px;
     background-image: url('img/fancybox/fancybox.png');
     background-position: -40px -90px;
     background-repeat: no-repeat;
 }
-
 #fancybox-title-main {
     font-weight: bold;
     line-height: 29px;
@@ -481,14 +421,12 @@ caption { background: #000; font-weight: bold; }
     background-position: 0px -40px;
     color: #FFF;
 }
-
 #fancybox-title-right {
     padding-left: 15px;
     background-image: url('img/fancybox/fancybox.png');
     background-position: -55px -90px;
     background-repeat: no-repeat;
 }
-
 #fancybox-left, #fancybox-right {
     position: absolute;
     bottom: 0px;
@@ -500,15 +438,12 @@ caption { background: #000; font-weight: bold; }
     z-index: 1102;
     display: none;
 }
-
 #fancybox-left {
     left: 0px;
 }
-
 #fancybox-right {
     right: 0px;
 }
-
 #fancybox-left-ico, #fancybox-right-ico {
     position: absolute;
     top: 50%;
@@ -520,30 +455,24 @@ caption { background: #000; font-weight: bold; }
     z-index: 1102;
     display: block;
 }
-
 #fancybox-left-ico {
     background-image: url('img/fancybox/fancybox.png');
     background-position: -40px -30px;
 }
-
 #fancybox-right-ico {
     background-image: url('img/fancybox/fancybox.png');
     background-position: -40px -60px;
 }
-
 #fancybox-left:hover, #fancybox-right:hover {
     visibility: visible;    /* IE6 */
 }
-
 #fancybox-left:hover span {
     left: 20px;
 }
-
 #fancybox-right:hover span {
     left: auto;
     right: 20px;
 }
-
 .fancy-bg {
     position: absolute;
     padding: 0;
@@ -553,21 +482,18 @@ caption { background: #000; font-weight: bold; }
     height: 20px;
     z-index: 1001;
 }
-
 #fancy-bg-n {
     top: -20px;
     left: 0;
     width: 100%;
     background-image: url('img/fancybox/fancybox-x.png');
 }
-
 #fancy-bg-ne {
     top: -20px;
     right: -20px;
     background-image: url('img/fancybox/fancybox.png');
     background-position: -40px -162px;
 }
-
 #fancy-bg-e {
     top: 0;
     right: -20px;
@@ -575,14 +501,12 @@ caption { background: #000; font-weight: bold; }
     background-image: url('img/fancybox/fancybox-y.png');
     background-position: -20px 0px;
 }
-
 #fancy-bg-se {
     bottom: -20px;
     right: -20px;
     background-image: url('img/fancybox/fancybox.png');
     background-position: -40px -182px; 
 }
-
 #fancy-bg-s {
     bottom: -20px;
     left: 0;
@@ -590,21 +514,18 @@ caption { background: #000; font-weight: bold; }
     background-image: url('img/fancybox/fancybox-x.png');
     background-position: 0px -20px;
 }
-
 #fancy-bg-sw {
     bottom: -20px;
     left: -20px;
     background-image: url('img/fancybox/fancybox.png');
     background-position: -40px -142px;
 }
-
 #fancy-bg-w {
     top: 0;
     left: -20px;
     height: 100%;
     background-image: url('img/fancybox/fancybox-y.png');
 }
-
 #fancy-bg-nw {
     top: -20px;
     left: -20px;
@@ -616,17 +537,13 @@ caption { background: #000; font-weight: bold; }
 
 #fancybox-loading.fancybox-ie div   { background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='css/img/fancybox/fancy_loading.png', sizingMethod='scale'); }
 .fancybox-ie #fancybox-close        { background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='css/img/fancybox/fancy_close.png', sizingMethod='scale'); }
-
 .fancybox-ie #fancybox-title-over   { background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='css/img/fancybox/fancy_title_over.png', sizingMethod='scale'); zoom: 1; }
 .fancybox-ie #fancybox-title-left   { background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='css/img/fancybox/fancy_title_left.png', sizingMethod='scale'); }
 .fancybox-ie #fancybox-title-main   { background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='css/img/fancybox/fancy_title_main.png', sizingMethod='scale'); }
 .fancybox-ie #fancybox-title-right  { background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='css/img/fancybox/fancy_title_right.png', sizingMethod='scale'); }
-
 .fancybox-ie #fancybox-left-ico     { background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='css/img/fancybox/fancy_nav_left.png', sizingMethod='scale'); }
 .fancybox-ie #fancybox-right-ico    { background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='css/img/fancybox/fancy_nav_right.png', sizingMethod='scale'); }
-
 .fancybox-ie .fancy-bg { background: transparent !important; }
-
 .fancybox-ie #fancy-bg-n    { filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='css/img/fancybox/fancy_shadow_n.png', sizingMethod='scale'); }
 .fancybox-ie #fancy-bg-ne   { filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='css/img/fancybox/fancy_shadow_ne.png', sizingMethod='scale'); }
 .fancybox-ie #fancy-bg-e    { filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='css/img/fancybox/fancy_shadow_e.png', sizingMethod='scale'); }

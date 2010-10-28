@@ -1,35 +1,26 @@
 /* PRINT STYLES
 -------------------------------------------------------------------------- */
 * { background: transparent !important; color: #444 !important; text-shadow: none !important; }
-
 a, a:visited { color: #444 !important; text-decoration: underline; }
 a:after { content: " (" attr(href) ")"; } 
 abbr:after { content: " (" attr(title) ")"; }
-
 pre, blockquote { page-break-inside: avoid; }
-
 @page { margin: 0.5cm; }
-
 p, h2, h3 { orphans: 3; widows: 3; }
 h2, h3 { page-break-after: avoid; }
 thead { display: table-header-group; }
-
 body {
     line-height: 1.5; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 10pt;
     word-spacing: 1pt;
 }
-
 h1, h2, h3, h4, h5, h6 { font-weight: normal; clear: both; }
 h1 { font-size: 24pt; line-height: 1.1; margin-bottom: 12pt; }
 h2 { font-size: 18pt; line-height: 1.1; margin-bottom: 9pt; }
 h3 { font-size: 14pt; line-height: 1.1; margin-bottom: 7pt; }
 h4 { font-size: 12pt; line-height: 1.1; margin-bottom: 6pt; }
-
 p, ul, ol, blockquote, table, form, fieldset { margin-bottom: 14pt; }
-
 code { font: 0.9em Courier, monospace; }
-
 hr {
     background: #CCC;
     color: #CCC;
@@ -39,7 +30,6 @@ hr {
     padding: 0;
     border: none;
 }
-
 blockquote {
     color: #8e8e8e;
     font-family: Palatino, Georgia, Times, "Times New Roman", serif;
@@ -50,51 +40,39 @@ blockquote {
     line-height: 1.1;
     margin: 1.5em;
 }
-
 /* Standard Quotes */
 :lang(de) { quotes: '\00BB' '\00AB' '\203A' '\2039'; }
-
 /* Blockquotes */
 blockquote { quotes: none; }
 blockquote p:first-child:before { content: '\00BB'; margin-left: -0.5em;}
 blockquote p:last-child:after  { content: '\00AB'; }
-
 strong { font-weight: bold; }
 em, dfn { font-style: italic; }
 dfn { font-weight: bold; }
 sup, sub { line-height: 0; }
 abbr { border-bottom: 1px dotted #986044; cursor: help; }
-
 li ul, li ol { margin: 0; }
 ul, ol { margin: 1.5em 0; }
 ul { list-style-type: square; }
 ol { list-style-type: decimal; }
-
 ins { text-decoration: underline; }
 del { text-decoration: line-through; }
-
-
 #header a, #footer a {
     text-decoration: none;
     color: #000;
 }
-
 #header a[href]:after,
 #footer a[href]:after {
     content: '';
 }
-
 img { margin: 0; border: 1px solid #000; }
-
 label { font-weight: bold; display: block; }
-
 fieldset {
     border: 1px solid #000;
     margin-bottom: 30px;
     background: #fff;
     position: relative;
 }
-
 input[type="text"], textarea {
     width: 99%;
     padding: 5px 3px;
@@ -104,10 +82,8 @@ input[type="text"], textarea {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 14px;
 }
-
 textarea { height: 200px; }
 input[type="submit"], .submit_container input { display: none; }
-
 table {
     border: 1px solid #000;
     width: 100%;
@@ -115,7 +91,6 @@ table {
     padding: 15px;
     border-collapse: separate;
 }
-
 th, tfoot td {
     font-weight: bold;
     color: #000;
@@ -123,23 +98,18 @@ th, tfoot td {
     text-align: left;
     padding: 5px 10px;
 }
-
 td { padding: 3px 10px; }
 tbody td { border-bottom: 1px solid #dedede; }
 tr.odd td { background: #ededed }
 tfoot td { font-style: italic; }
-
 #nav { display: none; }
 #map { width: 15.0cm; height: 10.0cm; border: 1px solid #000; margin-bottom: 0.5cm; }
-
 #header h1 { margin-bottom: 0; }
 #header { margin-bottom: 1cm; }
-
 #header, #footer {
     clear: both;
     background: #ddd;
     text-align: center;
     padding: 0.3cm;
 }
-
 #footer p { margin: 0; }
