@@ -96,8 +96,14 @@ del { text-decoration: line-through; }
 /* LINKS
 -------------------------------------------------------------------------- */
 a:hover, a:active { outline: none; } 
-a:link { color: #000; text-decoration: underline; }
-a:visited { color: #000; text-decoration: underline; }
+a:link {
+    color: #000;
+    text-decoration: underline;
+}
+a:visited {
+    color: #000;
+    text-decoration: underline;
+}
 a:hover { color: #000; }
 a:focus { color: #000; }
 a:active { color: #000; }
@@ -106,6 +112,8 @@ a:active { color: #000; }
 -------------------------------------------------------------------------- */
 .ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
 .ie7 img { -ms-interpolation-mode: bicubic; }
+img {
+}
 img.left { float: left; margin: 0 1.5em 1.5em 0; }
 img.right { float: right; margin: 0 0 1.5em 1.5em; }
 
@@ -156,45 +164,42 @@ input[type=checkbox], input[type=radio], input.checkbox, input.radio { position:
 
 /* TABLES
 -------------------------------------------------------------------------- */
-table { margin: 1.5em 0; width: 100%; }
+table {
+    margin: 1.5em 0;
+    width: 100%;
+}
 th { font-weight: bold; }
 thead th { background: #000; }
 th, td, caption { padding: 0.25em; }
 tr.even td { background: #000; }
 tfoot { font-style: italic; }
-caption { background: #000; font-weight: bold; }
+caption {
+    background: #000;
+    font-weight: bold;
+}
 
 /* STRUCTURE
 -------------------------------------------------------------------------- */
 #nav {
     position: absolute;
-    right: 0;
-    top: 0;
 }
 #nav li {
     float: left;
-    margin-left: ;
 }
 #nav a {
     display: block;
 }
-#page { margin: 0 auto; }
-
+#page {
+}
 #header {
-    height: ;
-    background: #000 url(img/) repeat-x 0 0;
 }
 #body {
 }
 #main {
-    width: ;
     float: left;
-    margin: 0 0 0 0;
 }
 #aside {
-    width: ;
     float: right;
-    margin: 0 0 0 0;
 }
 #map {
     width: 500px;
@@ -204,7 +209,6 @@ caption { background: #000; font-weight: bold; }
 }
 #footer {
     clear: both;
-    background: #000 url(img/) repeat-x 0 0;
 }
 
 /* PLUGINS
