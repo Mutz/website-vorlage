@@ -1,12 +1,59 @@
-@import url(reset.css); /* Reset CSS */
+/*  COLORS
+-----------------------------------------------------------------------------
 
-/* COLORS ----------------------------------------------------------------
-    
-    
+    Hintergrund         
+    Text                
+    Links               
+    Besuchte Links      
+    Hover Links         
+    Überschriften       
+    Subüberschriften    
     
 */
 
-/* BODY ------------------------------------------------------------------ */
+/* RESET
+-------------------------------------------------------------------------- */
+
+/* Based on http://meyerweb.com/eric/tools/css/reset/ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, 
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, 
+font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, 
+u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, 
+caption, tbody, tfoot, thead, tr, th, td { 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+ 
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, 
+q:before, q:after {
+    content: ''; 
+    content: none;
+}
+ 
+:focus { outline: 0; }
+
+ins { text-decoration: none; }
+
+del { text-decoration: line-through; }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a { outline: none; }
+
+/* GLOBAL
+-------------------------------------------------------------------------- */
 
 body {
     background: #fff repeat 0 0;
@@ -26,7 +73,8 @@ body {
         url('fonts/.svg#') format('svg');
 }
 
-/* HEADINGS ------------------------------------------------------------- */
+/* TYPOGRAPHY
+-------------------------------------------------------------------------- */
 
 h1, h2, h3, h4, h5, h6 { font-weight: normal; color:; }
 
@@ -37,11 +85,14 @@ h4 { font-size:; margin-bottom:; }
 h5 { font-size:; margin-bottom:; }
 h6 { font-size:; margin-bottom:; }
 
-/* TYPOGRAPHY ----------------------------------------------------------- */
+p { margin-bottom:; }
 
-p { margin:; }
+blockquote {
+    margin:;
+    color:;
+    font-style: italic;
+}
 
-blockquote { margin:; color:; font-style: italic; }
 q { font-style: italic; }
 
 strong { font-weight: bold; }
@@ -51,8 +102,15 @@ sup, sub { line-height: 0; }
 abbr { border-bottom: 1px dotted #666; cursor: help; }
 address { }
 
-pre { margin: 1.5em 0; white-space: pre; }
-pre, code { font: 1.0em 'Andale Mono', 'Lucida Console', monospace; line-height: 1.5; }
+pre {
+    margin: 1.5em 0;
+    white-space: pre;
+}
+
+pre, code {
+    font: 1.0em 'Andale Mono', 'Lucida Console', monospace;
+    line-height: 1.5;
+}
 
 li ul, li ol { margin: 0; }
 ul, ol { margin:; padding-left:; }
@@ -65,7 +123,8 @@ dd { margin-left:; }
 ins { text-decoration: underline; }
 del { color:; text-decoration: line-through; }
 
-/* LINKS ---------------------------------------------------------------- */
+/* LINKS
+-------------------------------------------------------------------------- */
 
 a:link { color:; text-decoration: underline; }
 a:visited { color:; text-decoration: underline; }
@@ -73,12 +132,14 @@ a:hover { color:; }
 a:focus { color:; }
 a:active { color:; }
 
-/* IMAGES & VIDEOS ------------------------------------------------------ */
+/* IMAGES
+-------------------------------------------------------------------------- */
 
 img.left { float: left; margin: 1.5em 1.5em 1.5em 0; }
 img.right { float: right; margin: 1.5em 0 1.5em 1.5em; }
 
-/* FORMS ---------------------------------------------------------------- */
+/* FORMS
+-------------------------------------------------------------------------- */
 
 label { font-weight: bold; }
 fieldset { padding: 1.5em; margin: 0 0 1.5em 0; border: 1px solid #ccc; }
@@ -125,7 +186,8 @@ input[type=checkbox], input[type=radio], input.checkbox, input.radio { position:
 .awesome:hover { background-color: #222; color: #fff; }
 .awesome:active { margin-top: 1px; }
 
-/* TABLES --------------------------------------------------------------- */
+/* TABLES
+-------------------------------------------------------------------------- */
 
 table { margin-bottom:; width: 100%; }
 th { font-weight: bold; }
@@ -135,31 +197,36 @@ tr.even td { background:; }
 tfoot { font-style: italic; }
 caption { background:; font-weight: bold; }
 
-/* CLASSES -------------------------------------------------------------- */
+/* STRUCTURE
+-------------------------------------------------------------------------- */
 
-.hide { display: none; }
-.quiet { color: #666; }
-.highlight { background: #ff0; }
-.first { margin-left: 0; padding-left: 0; }
-.last { margin-right: 0; padding-right: 0; }
-.top { margin-top: 0; padding-top: 0; }
-.bottom { margin-bottom: 0; padding-bottom: 0; }
+#nav {
+    
+}
 
-/* LAYOUT --------------------------------------------------------------- */
+#nav li {
+    
+}
+
+#nav a {
+    
+}
 
 #page { margin: 0 auto; }
 
-#header {}
-#footer {}
+#header {
+    
+}
 
-#body {}
+#footer {
+    
+}
 
-#map { width: 500px; height: 400px; }
+#body {
+    
+}
 
-/* ###################### ----------------------------------------------- */
-
-/* NAVIGATION ----------------------------------------------------------- */
-
-#nav {}
-#nav li {}
-#nav a {}
+#map {
+    width: 500px;
+    height: 400px;
+}

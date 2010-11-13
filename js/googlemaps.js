@@ -13,6 +13,8 @@ $(document).ready(function() {
             // map.setMapType(G_SATELLITE_MAP); /* Satellitenaufnahme */
             // map.setMapType(G_PHYSICAL_MAP); /* Gelände */
             map.setUIToDefault(); /* Standard-Navigation */
+            // map.addControl(new GOverviewMapControl()); /* Übersichtskarte einblenden */
+            // map.addControl(new GScaleControl()); /* Massstab einblenden */
             // map.addControl(new GLargeMapControl()); /* Große Navigation (alt) */
             // map.addControl(new GSmallMapControl()); /* Kleine Navigation (alt) */
             // map.addControl(new GMapTypeControl()); /* Karte, Satellite, Hybrid (alt) */
